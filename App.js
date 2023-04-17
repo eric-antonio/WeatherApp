@@ -1,5 +1,5 @@
 import React from 'react';
-import {  SafeAreaView,Text, View } from 'react-native';
+import {  SafeAreaView,Text, View , StyleSheet} from 'react-native';
 
 const  App = ()=> {
   return (
@@ -10,5 +10,7 @@ const  App = ()=> {
     </SafeAreaView>
   );
 }
-
+const styles = StyleSheet.create({
+  
+})
 export default App;
