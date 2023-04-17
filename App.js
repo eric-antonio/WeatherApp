@@ -6,6 +6,9 @@ const  App = ()=> {
     <SafeAreaView style={styles.wrapper} >
       <View style={styles.container}>
        <Text> Current Weather</Text>
+       <Text>6</Text>
+       <Text>Feels like 5</Text>
+       <Text>Hing : 8 Low: 6</Text>
       </View>
     </SafeAreaView>
   );
