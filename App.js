@@ -8,10 +8,13 @@ const  App = ()=> {
       <View style={styles.container}>
 
        <Text> Current Weather</Text> 
+
        <Text style={styles.temp}>6</Text>
+
        <Text style={styles.feels}>Feels like 5</Text>
-       <Text>Hing : 8 Low: 6</Text>
        
+       <Text>Hing : 8 Low: 6</Text>
+
       </View>
 
     </SafeAreaView>
