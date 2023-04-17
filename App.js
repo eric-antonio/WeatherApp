@@ -5,7 +5,7 @@ const  App = ()=> {
   return (
     <SafeAreaView style={styles.wrapper} >
       <View style={styles.container}>
-       <Text>Hello Éric</Text>
+       <Text> Current Weather</Text>
       </View>
     </SafeAreaView>
   );
