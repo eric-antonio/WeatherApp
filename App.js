@@ -11,12 +11,13 @@ const  App = ()=> {
   );
 }
 const styles = StyleSheet.create({
+
+  wrapper:{
+    flex: 1
+  },
   container :{
     backgroundColor: 'pink',
     flex:1
-  },
-  wrapper:{
-    flex: 1
   }
 
 });
