@@ -7,13 +7,11 @@ const  App = ()=> {
 
       <View style={styles.container}>
 
-       <Text> Current Weather</Text> 
-
        <Text style={styles.temp}>6</Text>
 
        <Text style={styles.feels}>Feels like 5</Text>
-       
-       <Text>Hing : 8 Low: 6</Text>
+
+       <Text style={styles.higLow}>Hing : 8 Low: 6</Text>
 
       </View>
 
@@ -26,18 +24,21 @@ const styles = StyleSheet.create({
     flex: 1
   },
   container :{
-    backgroundColor: 'cyan',
     flex:1,
-    alignItems:'center'
+    alignItems:'center',
+    
   },
   temp:{
     color:'black',
     fontSize:48,
   },
   feels:{
-    fontSize:30,
-    color:'black'
-
+    color:'black',
+    fontSize:30
+  },
+  higLow:{
+    color:'black',
+    fontSize:20,
   }
 
 });
