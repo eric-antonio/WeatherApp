@@ -5,7 +5,7 @@ const  App = ()=> {
   return (
     <SafeAreaView style={styles.wrapper} >
       <View style={styles.container}>
-       <Text>Open up App.js to start working on your app!</Text>
+       <Text>Hello Éric</Text>
       </View>
     </SafeAreaView>
   );
@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
   },
   container :{
     backgroundColor: 'pink',
-    flex:1
+    flex:1,
+    alignItems:'center'
   }
 
 });
