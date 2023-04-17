@@ -3,7 +3,7 @@ import {  SafeAreaView,Text, View , StyleSheet} from 'react-native';
 
 const  App = ()=> {
   return (
-    <SafeAreaView style={styles.wrapper} >
+    <SafeAreaView style={styles.wrapper}>
 
       <View style={styles.container}>
 
@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
   container :{
     flex:1,
     alignItems:'center',
+    backgroundColor:'pink'
     
   },
   temp:{
