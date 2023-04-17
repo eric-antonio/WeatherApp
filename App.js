@@ -24,9 +24,9 @@ const styles = StyleSheet.create({
     flex: 1
   },
   container :{
+    backgroundColor:'pink',
     flex:1,
-    alignItems:'center',
-    backgroundColor:'pink'
+    alignItems:'center'
     
   },
   temp:{
