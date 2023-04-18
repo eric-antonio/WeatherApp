@@ -37,10 +37,7 @@ const styles = StyleSheet.create({
     color:'black',
     fontSize:30
   },
-  higLow:{
-    color:'black',
-    fontSize:20,
-  }
+  
 
 });
 export default App;
