@@ -15,7 +15,7 @@ const  App = ()=> {
 
           <Text style={styles.higLow}>Hing: 8 </Text>
           <Text style={styles.higLow}>Low: 6 </Text>
-          
+
         </View>
 
       </View>
@@ -45,7 +45,9 @@ const styles = StyleSheet.create({
   higLow:{
     color:'black',
     fontSize:20,
+  },
+  higLowWrapper:{
+    flexDirection: 'row'
   }
-
 });
 export default App;
