@@ -5,12 +5,13 @@ const  App = ()=> {
   return (
     <SafeAreaView style={styles.wrapper}>
 
+      {/* The main View of the Application */}
       <View style={styles.container}>
 
        <Text style={styles.temp}>6</Text>
 
        <Text style={styles.feels}>Feels like 5</Text>
-
+       {/* Here we have the view that show's if it's hig or Low */}
         <View style={styles.higLowWrapper}>
 
           <Text style={styles.higLow}>Hing: 8 </Text>
