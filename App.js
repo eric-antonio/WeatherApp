@@ -32,10 +32,12 @@ const  App = ()=> {
 const styles = StyleSheet.create({
 
   wrapper:{
-    flex: 1
+    flex: 1,
+    paddingTop:50,
+    backgroundColor:'pink',
   },
   container :{
-    backgroundColor:'pink',
+ 
     flex:1,
     alignItems:'center'
     
