@@ -11,7 +11,7 @@ const  App = ()=> {
        <Text style={styles.feels}>Feels like 5</Text>
 
        {/* Here we have the view that show's if it's hig or Low */}
-       
+
         <View style={styles.higLowWrapper}>
 
           <Text style={styles.higLow}>Hing: 8 </Text>
@@ -22,8 +22,8 @@ const  App = ()=> {
 
       {/* New View The Body Wrapper */}
       <View style={styles.bodyWrapper}>
-        <Text>It's Sunny</Text>
-        <Text>It's perfect t-shirt weather</Text>
+        <Text style={styles.description}>It's Sunny</Text>
+        <Text style={styles.message}>It's perfect t-shirt weather</Text>
       </View>
 
     </SafeAreaView>
@@ -58,6 +58,12 @@ const styles = StyleSheet.create({
   bodyWrapper:{
     justifyContent:'flex-end',
     alignItems:'flex-start'
+  },
+  description:{
+
+  },
+  message:{
+    
   }
 });
 export default App;
