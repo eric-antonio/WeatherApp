@@ -18,7 +18,7 @@ const  App = ()=> {
           <Text style={styles.higLow}>Low: 6 </Text>
 
         </View>
-        {/* New View */}
+        {/* New View The Body Wrapper */}
         <View>
           <Text>It's Sunny</Text>
           <Text>It's perfect t-shirt weather</Text>
