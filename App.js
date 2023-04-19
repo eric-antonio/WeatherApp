@@ -18,6 +18,11 @@ const  App = ()=> {
           <Text style={styles.higLow}>Low: 6 </Text>
 
         </View>
+        {/* New View */}
+        <View>
+          <Text>It's Sunny</Text>
+          <Text>It's perfect t-shirt weather</Text>
+        </View>
 
       </View>
 
