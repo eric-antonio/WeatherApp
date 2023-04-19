@@ -11,12 +11,12 @@ const  App = ()=> {
 
        <Text style={styles.feels}>Feels like 5</Text>
 
-       <View style={styles.higLowWrapper}>
-        <Text style={styles.higLow}>Hing: 8 </Text>
-        <Text style={styles.higLow}>Low: 6 </Text>
-       </View>
+        <View style={styles.higLowWrapper}>
 
-
+          <Text style={styles.higLow}>Hing: 8 </Text>
+          <Text style={styles.higLow}>Low: 6 </Text>
+          
+        </View>
 
       </View>
 
