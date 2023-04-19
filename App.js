@@ -7,26 +7,23 @@ const  App = ()=> {
 
       {/* The main View of the Application */}
       <View style={styles.container}>
-
        <Text style={styles.temp}>6</Text>
-
        <Text style={styles.feels}>Feels like 5</Text>
+
        {/* Here we have the view that show's if it's hig or Low */}
+       
         <View style={styles.higLowWrapper}>
 
           <Text style={styles.higLow}>Hing: 8 </Text>
           <Text style={styles.higLow}>Low: 6 </Text>
 
         </View>
+      </View>
 
-        {/* New View The Body Wrapper */}
-        <View style={styles.bodyWrapper}>
-
-          <Text>It's Sunny</Text>
-          <Text>It's perfect t-shirt weather</Text>
-
-        </View>
-
+      {/* New View The Body Wrapper */}
+      <View style={styles.bodyWrapper}>
+        <Text>It's Sunny</Text>
+        <Text>It's perfect t-shirt weather</Text>
       </View>
 
     </SafeAreaView>
