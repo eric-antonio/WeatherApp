@@ -57,8 +57,10 @@ const styles = StyleSheet.create({
   },
   higLowWrapper:{
     flexDirection: 'row'
-  },bodyWrapper:{
-    justifyContent:'flex-end'
+  },
+  bodyWrapper:{
+    justifyContent:'flex-end',
+    alignItems:'flex-start'
   }
 });
 export default App;
