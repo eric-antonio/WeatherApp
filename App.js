@@ -18,10 +18,13 @@ const  App = ()=> {
           <Text style={styles.higLow}>Low: 6 </Text>
 
         </View>
+
         {/* New View The Body Wrapper */}
-        <View>
+        <View style={styles.bodyWrapper}>
+
           <Text>It's Sunny</Text>
           <Text>It's perfect t-shirt weather</Text>
+
         </View>
 
       </View>
@@ -54,6 +57,8 @@ const styles = StyleSheet.create({
   },
   higLowWrapper:{
     flexDirection: 'row'
+  },bodyWrapper:{
+    justifyContent:'flex-end'
   }
 });
 export default App;
