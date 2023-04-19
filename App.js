@@ -60,10 +60,10 @@ const styles = StyleSheet.create({
     alignItems:'flex-start'
   },
   description:{
-
+    fontSize: 48
   },
   message:{
-    
+    fontSize:30
   }
 });
 export default App;
