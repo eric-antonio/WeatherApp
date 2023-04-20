@@ -1,9 +1,11 @@
 import React from "react";
-import { SafeAreaView,View , StyleSheet} from "react-native";
+import { SafeAreaView,View ,Text, StyleSheet,FlatList} from "react-native";
 
 const UpcomingWeather =()=>{
     return(
-        <SafeAreaView >
+        <SafeAreaView style={styles.container}>
+            <Text>Upcoming Weather</Text>
+            <FlatList></FlatList>
 
         </SafeAreaView>
     )
@@ -11,7 +13,7 @@ const UpcomingWeather =()=>{
 
 const styles = StyleSheet.create({
     container:{
-        
+        flex:1
     }
 })
 
