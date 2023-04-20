@@ -34,9 +34,10 @@ const DATA = [
     }
 ]
 
-const Item = ()=>{
+const Item = (props)=>{
+    const { dtx_txt, main , max ,condition }=props
     return(
-        
+
     )
 }
 const UpcomingWeather =()=>{
