@@ -5,7 +5,7 @@ const UpcomingWeather =()=>{
     return(
         <SafeAreaView style={styles.container}>
             <Text>Upcoming Weather</Text>
-            <FlatList></FlatList>
+            <FlatList/>
 
         </SafeAreaView>
     )
