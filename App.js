@@ -35,13 +35,13 @@ const styles = StyleSheet.create({
 
   wrapper:{
     flex: 1,
-    paddingTop:50,
     backgroundColor:'pink',
   },
   container :{
  
     flex:1,
-    alignItems:'center'
+    alignItems:'center',
+    justifyContent:'center'
     
   },
   temp:{
