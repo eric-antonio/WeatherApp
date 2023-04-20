@@ -8,6 +8,7 @@ const  App = ()=> {
 
       {/* The main View of the Application */}
       <View style={styles.container}>
+       <Feather name="sun" size={24} color="black" />
        <Text style={styles.temp}>6</Text>
        <Text style={styles.feels}>Feels like 5</Text>
 
