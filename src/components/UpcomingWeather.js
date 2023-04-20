@@ -1,2 +1,12 @@
 import React from "react";
-import { SafeAreaView } from "react-native";
+import { View } from "react-native";
+
+const UpcomingWeather =()=>{
+    return(
+        <View>
+            
+        </View>
+    )
+}
+
+export default UpcomingWeather;
