@@ -34,13 +34,18 @@ const DATA = [
     }
 ]
 
+const Item = ()=>{
+    return(
+        
+    )
+}
 const UpcomingWeather =()=>{
     return(
         <SafeAreaView style={styles.container}>
             <Text>Upcoming Weather</Text>
             <FlatList
-                data={(DATA.at(0))}
-                renderItem={DATA}
+                data={DATA}
+                renderItem={}
             />
 
         </SafeAreaView>
