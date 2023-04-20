@@ -4,7 +4,7 @@ import CurrentWeather from "./src/components/CurrentWeather";
 const App =()=>{
   return(
     <View style={styles.container}>
-
+      <CurrentWeather/>
     </View>
   )
 }
