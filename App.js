@@ -1,5 +1,6 @@
 import React from 'react';
 import {  SafeAreaView,Text, View , StyleSheet} from 'react-native';
+import { Feather } from '@expo/vector-icons';
 
 const  App = ()=> {
   return (
