@@ -42,7 +42,7 @@ const DATA = [
 const Item = (props)=>{
     const { dt_txt, min , max ,condition }=props
     return(
-        <View>
+        <View style={styles.item}>
             <Feather name={'sun'} size={50} color={'white'}/>
             <Text>{dt_txt}</Text>
             <Text>{min}</Text>
@@ -86,6 +86,11 @@ const styles = StyleSheet.create({
         flex:1,
         marginTop: StatusBar.currentHeight || 0,
         backgroundColor:'grey'
+    },
+    item:{
+        padding:20,
+        marginVertical:8,
+        marginHorizontal:16
     }
 })
 
