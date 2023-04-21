@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView,View ,Text, StyleSheet,FlatList} from "react-native";
+import { SafeAreaView,View ,Text, StyleSheet,FlatList, StatusBar} from "react-native";
 import {Feather} from '@expo/vector-icons'
 
 // ? Data ou o nosso array.
