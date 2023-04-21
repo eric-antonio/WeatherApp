@@ -85,12 +85,17 @@ const styles = StyleSheet.create({
     container:{
         flex:1,
         marginTop: StatusBar.currentHeight || 0,
-        backgroundColor:'grey'
+        backgroundColor:'#00bfff'
     },
     item:{
         padding:20,
         marginVertical:8,
-        marginHorizontal:16
+        marginHorizontal:16,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems:'center',
+        borderWidth : 5,
+        backgroundColor:'#87cefa'
     }
 })
 
