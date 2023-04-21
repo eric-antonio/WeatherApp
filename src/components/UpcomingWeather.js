@@ -2,7 +2,7 @@ import React from "react";
 import { SafeAreaView,View ,Text, StyleSheet,FlatList} from "react-native";
 import {Feather} from '@expo/vector-icons'
 
-// ? Data ou o nosso array
+// ? Data ou o nosso array.
 const DATA = [
     {
         dt_txt:"2023-02-18 12:00:00",
