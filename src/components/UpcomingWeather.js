@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView,View ,Text, StyleSheet,FlatList, StatusBar} from "react-native";
+import { SafeAreaView,View ,Text, StyleSheet,FlatList, StatusBar, Image} from "react-native";
 import {Feather} from '@expo/vector-icons'
 
 // ? Data ou o nosso array.
@@ -70,6 +70,8 @@ const UpcomingWeather =()=>{
         <SafeAreaView style={styles.container}>
 
             <Text style={styles.title}>Upcoming Weather</Text>
+            {/* Placing the  Background IMG */}
+            <Image/>
 
             <FlatList
                 data={DATA}
