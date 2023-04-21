@@ -1,5 +1,11 @@
 import React from "react";
-import { SafeAreaView,View ,Text, StyleSheet,FlatList, StatusBar, Image} from "react-native";
+import { SafeAreaView,
+    View ,
+    Text, 
+    StyleSheet,
+    FlatList, 
+    StatusBar,
+    Image} from "react-native";
 import {Feather} from '@expo/vector-icons'
 
 // ? Data ou o nosso array.
@@ -73,7 +79,7 @@ const UpcomingWeather =()=>{
             {/* Placing the  Background IMG */}
             <Image
                 src={require('../../assets/upcoming-background.jpg')}
-                style={styles.img}
+                style={styles.image}
             />
 
             <FlatList
@@ -113,7 +119,12 @@ const styles = StyleSheet.create({
     date:{
         color:'#fffafa',
         fontSize:15
+    },
+    image:{
+        height:100,
+        width: 100
     }
+
 })
 
 export default UpcomingWeather;
