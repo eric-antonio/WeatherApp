@@ -8,6 +8,7 @@ const  CurrentWeather = ()=> {
 
       {/* The main View of the Application */}
       <View style={styles.container}>
+        {/* Applying a icon   */}
        <Feather name="sun" size={74} color="black" />
        <Text style={styles.temp}>6</Text>
        <Text style={styles.feels}>Feels like 5</Text>
