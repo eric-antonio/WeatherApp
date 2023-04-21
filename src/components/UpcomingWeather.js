@@ -1,5 +1,6 @@
 import React from "react";
 import { SafeAreaView,View ,Text, StyleSheet,FlatList} from "react-native";
+import {Feather} from '@expo/vector-icons'
 
 // ? Data ou o nosso array
 const DATA = [
@@ -39,12 +40,13 @@ const DATA = [
 
 // ?Video pausado no tempo : 1:04:35/4:40H
 const Item = (props)=>{
-    const { dtx_txt, main , max ,condition }=props
+    const { dt_txt, main , max ,condition }=props
     return(
         <View>
-            <Text></Text>
-            <Text></Text>
-            <Text></Text>
+            <Feather/>
+            <Text>{dt_txt}</Text>
+            <Text>{main}</Text>
+            <Text>{max}</Text>
 
         </View>
     )
