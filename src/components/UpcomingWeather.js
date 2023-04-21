@@ -78,7 +78,7 @@ const UpcomingWeather =()=>{
             <Text style={styles.title}>Upcoming Weather</Text>
             {/* Placing the  Background IMG */}
             <Image
-                src={require('../../assets/upcoming-background.jpg')}
+                source={require('../../assets/upcoming-background.jpg')}
                 style={styles.image}
             />
 
