@@ -74,7 +74,7 @@ const UpcomingWeather =()=>{
             <FlatList
                 data={DATA}
                 renderItem={renderItem}
-                keyExtractor={(item.dt_txt)}
+                keyExtractor={(item)=> item.dt_txt}
             />
 
         </SafeAreaView>
@@ -84,7 +84,7 @@ const UpcomingWeather =()=>{
 const styles = StyleSheet.create({
     container:{
         flex:1,
-        paddingTop:55
+        marginTop: StatusBar.currentHeight || 0,
     }
 })
 
