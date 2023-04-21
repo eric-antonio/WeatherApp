@@ -69,7 +69,7 @@ const UpcomingWeather =()=>{
     return(
         <SafeAreaView style={styles.container}>
 
-            <Text>Upcoming Weather</Text>
+            <Text style={styles.title}>Upcoming Weather</Text>
 
             <FlatList
                 data={DATA}
@@ -87,6 +87,9 @@ const styles = StyleSheet.create({
         marginTop: StatusBar.currentHeight || 0,
         backgroundColor:'#00bfff'
     },
+    title:{
+
+    },
     item:{
         padding:20,
         marginVertical:8,
@@ -96,6 +99,9 @@ const styles = StyleSheet.create({
         alignItems:'center',
         borderWidth : 5,
         backgroundColor:'#87cefa'
+    },temp:{
+        color:'white',
+        fontSize:20
     }
 })
 
