@@ -88,7 +88,9 @@ const styles = StyleSheet.create({
         backgroundColor:'#00bfff'
     },
     title:{
-
+        textAlign:'center',
+        fontSize:22,
+        margin: 10
     },
     item:{
         padding:20,
