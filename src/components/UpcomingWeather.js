@@ -74,6 +74,7 @@ const UpcomingWeather =()=>{
             <FlatList
                 data={DATA}
                 renderItem={renderItem}
+                keyExtractor={(item.dt_txt)}
             />
 
         </SafeAreaView>
