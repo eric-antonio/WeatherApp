@@ -5,7 +5,7 @@ import {Feather} from '@expo/vector-icons'
 // ? Data ou o nosso array
 const DATA = [
     {
-        dtx_txt:"2023-02-18 12:00:00",
+        dt_txt:"2023-02-18 12:00:00",
         main:{
             temp_max:8.55,
             temp_min:7.55
@@ -15,7 +15,7 @@ const DATA = [
         }]
     },
     {
-        dtx_txt:"2023-02-18 15:00:00",
+        dt_txt:"2023-02-18 15:00:00",
         main:{
             temp_max:8.55,
             temp_min:7.55
@@ -25,7 +25,7 @@ const DATA = [
         }]
     },
     {
-        dtx_txt:"2023-02-18 18:00:00",
+        dt_txt:"2023-02-18 18:00:00",
         main:{
             temp_max:8.55,
             temp_min:7.55
@@ -40,12 +40,12 @@ const DATA = [
 
 // ?Video pausado no tempo : 1:04:35/4:40H
 const Item = (props)=>{
-    const { dt_txt, main , max ,condition }=props
+    const { dt_txt, min , max ,condition }=props
     return(
         <View>
-            <Feather/>
+            <Feather name={'sun'} size={50} color={'white'}/>
             <Text>{dt_txt}</Text>
-            <Text>{main}</Text>
+            <Text>{min}</Text>
             <Text>{max}</Text>
 
         </View>
@@ -55,12 +55,25 @@ const Item = (props)=>{
 
 //! The component 
 const UpcomingWeather =()=>{
+    // * componente que vai renderizar os dados!
+    const renderItem =({item})=>(
+        <Item  
+            condition={item.weather[0].main} 
+            dt_txt={item.dt_txt} 
+            min={item.main.temp_min} 
+            max={item.main.temp_max} 
+        />
+    )
+
+    // ? O restor da app que tem o componente com os dados.
     return(
         <SafeAreaView style={styles.container}>
+
             <Text>Upcoming Weather</Text>
+
             <FlatList
                 data={DATA}
-                renderItem={}
+                renderItem={renderItem}
             />
 
         </SafeAreaView>
@@ -69,7 +82,8 @@ const UpcomingWeather =()=>{
 
 const styles = StyleSheet.create({
     container:{
-        flex:1
+        flex:1,
+        paddingTop:55
     }
 })
 
