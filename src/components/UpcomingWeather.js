@@ -42,6 +42,9 @@ const Item = (props)=>{
     const { dtx_txt, main , max ,condition }=props
     return(
         <View>
+            <Text></Text>
+            <Text></Text>
+            <Text></Text>
 
         </View>
     )
