@@ -64,7 +64,10 @@ const UpcomingWeather =()=>{
     // * componente que vai renderizar os dados!
     const renderItem =({item})=>(
         <Item  
-
+            condition={item.weather[0].main} 
+            dt_txt={item.dt_txt} 
+            min={item.main.temp_min} 
+            max={item.main.temp_max} 
         />
     )
 
