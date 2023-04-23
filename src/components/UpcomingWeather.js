@@ -67,7 +67,7 @@ const UpcomingWeather =()=>{
             condition={item.weather[0].main} 
             dt_txt={item.dt_txt} 
             min={item.main.temp_min} 
-            max={item.
+            max={item.main.temp_max} 
         />
     )
 
