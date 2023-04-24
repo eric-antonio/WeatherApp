@@ -1,9 +1,9 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text , StyleSheet} from "react-native";
 import {Feather}  from '@expo/vector-icons';
 
 
-const Item = (props)=>{
+const ListItem = (props)=>{
     const { dt_txt, min , max ,condition }=props
     return(
         <View style={styles.item}>
@@ -16,4 +16,23 @@ const Item = (props)=>{
     )
 }
 
+const styles =  StyleSheet.create({
+    item:{
+        padding:20,
+        marginVertical:8,
+        marginHorizontal:16,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems:'center',
+        borderWidth : 5,
+        backgroundColor:'#87cefa'
+    },temp:{
+        color:'#f5f5f5',
+        fontSize:20
+    },
+    date:{
+        color:'#fffafa',
+        fontSize:15
+    },
+})
 export default ListItem; 
