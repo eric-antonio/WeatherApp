@@ -85,7 +85,7 @@ const UpcomingWeather =()=>{
                     renderItem={renderItem}
                     keyExtractor={(item)=> item.dt_txt}
                 />
-                
+
             </ImageBackground>
         </SafeAreaView>
     )
@@ -121,8 +121,7 @@ const styles = StyleSheet.create({
         fontSize:15
     },
     image:{
-        height:100,
-        width: 100
+       flex:1
     }
 
 })
