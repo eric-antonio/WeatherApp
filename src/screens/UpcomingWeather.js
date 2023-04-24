@@ -56,11 +56,13 @@ const UpcomingWeather =()=>{
             max={item.main.temp_max} 
         />
     )
+    //* Simplificando a nossa forma de estilizar!
+    const {container , image , title} = styles
 
 
     //! Temos o retorno da informação disposto da seguinte maneira.
     return(
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView style={container}>
             { /* 
                 * 1- ImageBackground : Temos a imagem de fundo da Tela.
                 * 2- Text : Apenas o titulo da nossa Pagina.
@@ -72,10 +74,10 @@ const UpcomingWeather =()=>{
             }
             <ImageBackground
                 source={require('../../assets/upcoming-background.jpg')}
-                style={styles.image}
+                style={image}
             >
 
-                <Text style={styles.title}>Upcoming Weather</Text>
+                <Text style={title}>Upcoming Weather</Text>
                 <FlatList
                     data={DATA}
                     renderItem={renderItem}
