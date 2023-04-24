@@ -5,7 +5,7 @@ import { SafeAreaView,
     StyleSheet,
     FlatList, 
     StatusBar,
-    Image} from "react-native";
+    ImageBackground} from "react-native";
 import {Feather} from '@expo/vector-icons'
 
 // ? Data ou o nosso array.
