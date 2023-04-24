@@ -6,7 +6,8 @@ import OurChild from "./src/components/OurChild";
 const App =()=>{
   return(
     <View style={styles.container}>
-      <OurChild message={'boss'}/>
+      <OurChild message={'Éric'}/>
+      <OurChild message = {'Natalia'}/>
       
     </View>
   )
