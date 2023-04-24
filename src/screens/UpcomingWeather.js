@@ -57,6 +57,7 @@ const UpcomingWeather =()=>{
         />
     )
 
+
     //! Temos o retorno da informação disposto da seguinte maneira.
     return(
         <SafeAreaView style={styles.container}>
