@@ -42,21 +42,6 @@ const DATA = [
     }
 ]
 
-// * tempos aqui as props juntamente com o componente  a ideia aqui é fazer a ligação entre o array e o componente (não entendi muito bem , irei tentar ver bem depois na resolução)
-
-// ?Video pausado no tempo : 1:04:35/4:40H
-const Item = (props)=>{
-    const { dt_txt, min , max ,condition }=props
-    return(
-        <View style={styles.item}>
-            <Feather name={'sun'} size={50} color={'#fffafa'}/>
-            <Text style={styles.date}>{dt_txt}</Text>
-            <Text style={styles.temp}>{min}</Text>
-            <Text style={styles.temp}>{max}</Text>
-
-        </View>
-    )
-}
 
 
 //! The component 
