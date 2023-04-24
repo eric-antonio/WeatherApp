@@ -3,6 +3,7 @@ import { View, Text , StyleSheet} from "react-native";
 import {Feather}  from '@expo/vector-icons';
 
 /* 
+*   Essa lista é um componente ou seja um modelo!
 ?   Modelo de exibição das listas.
 ?   temos aqui apenas uma View com 3 Text para dispor a informação
 */
