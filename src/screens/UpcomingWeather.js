@@ -43,9 +43,10 @@ const DATA = [
     }
 ]
 
-
-
-//! sONO NO 11:10
+/*
+ * Aqui temos oa funcção que faz a renderização das listas
+   ! Pega cada objecto ou item da lista e exibe.
+*/
 const UpcomingWeather =()=>{
     const renderItem =({item})=>(
         <ListItem  
@@ -56,14 +57,23 @@ const UpcomingWeather =()=>{
         />
     )
 
-    // ? O restor da app que tem o componente com os dados.
+    //! Temos o retorno da informação disposto da seguinte maneira.
     return(
         <SafeAreaView style={styles.container}>
-            {/* Placing the  Background IMG */}
+            { /* 
+                * 1- ImageBackground : Temos a imagem de fundo da Tela.
+                * 2- Text : Apenas o titulo da nossa Pagina.
+                ? 3- FlatList : Passos:
+                    * Pega o nosso array , que contem os dados a serem exibidos!
+                    ! RenderItem : Aqui faz referencia a que lista renderizar , ou seja a ListItem criada a cima.
+                    * KeyExtractor : Vamos chamar de chave unica para diferenciar a informação. 
+             */
+            }
             <ImageBackground
                 source={require('../../assets/upcoming-background.jpg')}
                 style={styles.image}
             >
+
                 <Text style={styles.title}>Upcoming Weather</Text>
                 <FlatList
                     data={DATA}
@@ -75,8 +85,8 @@ const UpcomingWeather =()=>{
         </SafeAreaView>
     )
 }
-// * Here we h'got the CSS 
 
+//* Temos aqui o nosso CSS
 const styles = StyleSheet.create({
     container:{
         flex:1,
