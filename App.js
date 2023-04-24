@@ -6,9 +6,7 @@ import OurChild from "./src/components/OurChild";
 const App =()=>{
   return(
     <View style={styles.container}>
-      <OurChild message={'Hello'}/>
-      <OurChild message = {"Greeting"}/>
-      
+      <UpcomingWeather/>
     </View>
   )
 }
