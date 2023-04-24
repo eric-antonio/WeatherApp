@@ -74,17 +74,19 @@ const UpcomingWeather =()=>{
     // ? O restor da app que tem o componente com os dados.
     return(
         <SafeAreaView style={styles.container}>
-
-            <Text style={styles.title}>Upcoming Weather</Text>
             {/* Placing the  Background IMG */}
-           
-
-            <FlatList
-                data={DATA}
-                renderItem={renderItem}
-                keyExtractor={(item)=> item.dt_txt}
-            />
-
+            <ImageBackground
+                source={require('../../assets/upcoming-background.jpg')}
+                style={styles.image}
+            >
+                <Text style={styles.title}>Upcoming Weather</Text>
+                <FlatList
+                    data={DATA}
+                    renderItem={renderItem}
+                    keyExtractor={(item)=> item.dt_txt}
+                />
+                
+            </ImageBackground>
         </SafeAreaView>
     )
 }
