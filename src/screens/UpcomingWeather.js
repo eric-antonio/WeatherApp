@@ -6,7 +6,8 @@ import { SafeAreaView,
     FlatList, 
     StatusBar,
     ImageBackground} from "react-native";
-import {Feather} from '@expo/vector-icons'
+import {Feather} from '@expo/vector-icons';
+import ListItem from "../components/ListItem";
 
 // ? Data ou o nosso array.
 const DATA = [
@@ -44,11 +45,10 @@ const DATA = [
 
 
 
-//! The component 
+//! sONO NO 11:10
 const UpcomingWeather =()=>{
-    // * componente que vai renderizar os dados!
     const renderItem =({item})=>(
-        <Item  
+        <ListItem  
             condition={item.weather[0].main} 
             dt_txt={item.dt_txt} 
             min={item.main.temp_min} 
