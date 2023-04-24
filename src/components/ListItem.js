@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text , StyleSheet} from "react-native";
 import {Feather}  from '@expo/vector-icons';
 
-
+//?Modelo de exbibição da lista
 const ListItem = (props)=>{
     const { dt_txt, min , max ,condition }=props
     return(
