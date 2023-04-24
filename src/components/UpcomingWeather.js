@@ -91,6 +91,7 @@ const UpcomingWeather =()=>{
         </SafeAreaView>
     )
 }
+// * Here we h'got the CSS 
 
 const styles = StyleSheet.create({
     container:{
