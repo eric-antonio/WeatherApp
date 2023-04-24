@@ -2,11 +2,16 @@ import React from "react";
 import { View, Text , StyleSheet} from "react-native";
 import {Feather}  from '@expo/vector-icons';
 
-//?Modelo de exbibição da lista
+/* 
+?   Modelo de exibição das listas.
+?   temos aqui apenas uma View com 3 Text para dispor a informação
+*/
+
 const ListItem = (props)=>{
     const { dt_txt, min , max ,condition }=props
     return(
         <View style={styles.item}>
+            
             <Feather name={'sun'} size={50} color={'#fffafa'}/>
             <Text style={styles.date}>{dt_txt}</Text>
             <Text style={styles.temp}>{min}</Text>
