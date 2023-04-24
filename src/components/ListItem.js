@@ -8,8 +8,8 @@ import {Feather}  from '@expo/vector-icons';
 */
 
 const ListItem = (props)=>{
-    const { dt_txt, min , max ,condition }= props
-    const {date, temp, item}= styles
+    const { dt_txt, min , max ,condition } = props
+    const {date, temp, item} = styles
     return(
         <View style={item}>
             
