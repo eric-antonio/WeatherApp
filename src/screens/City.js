@@ -1,12 +1,19 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { SafeAreaView ,View, Text , StyleSheet} from "react-native";
 
+//* A nossa Tela.
 const City = () =>{
+    const {} = styles
     return(
-        <View>
-            
-        </View>
+        <SafeAreaView>
+
+        </SafeAreaView>
     )
 }
+
+//* O nosso CSS
+const styles = StyleSheet.create({
+
+})
 
 export default City;
