@@ -77,10 +77,7 @@ const UpcomingWeather =()=>{
 
             <Text style={styles.title}>Upcoming Weather</Text>
             {/* Placing the  Background IMG */}
-            <Image
-                source={require('../../assets/upcoming-background.jpg')}
-                style={styles.image}
-            />
+           
 
             <FlatList
                 data={DATA}
