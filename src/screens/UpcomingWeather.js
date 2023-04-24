@@ -89,23 +89,6 @@ const styles = StyleSheet.create({
         fontSize:22,
         margin: 10
     },
-    item:{
-        padding:20,
-        marginVertical:8,
-        marginHorizontal:16,
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        alignItems:'center',
-        borderWidth : 5,
-        backgroundColor:'#87cefa'
-    },temp:{
-        color:'#f5f5f5',
-        fontSize:20
-    },
-    date:{
-        color:'#fffafa',
-        fontSize:15
-    },
     image:{
        flex:1
     }
