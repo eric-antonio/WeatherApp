@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView ,View, Text , StyleSheet, ImageBackground} from "react-native";
+import { SafeAreaView ,View, Text , StyleSheet, ImageBackground, StatusBar} from "react-native";
 
 //* A nossa Tela.
 const City = () =>{
@@ -21,6 +21,7 @@ const City = () =>{
 const styles = StyleSheet.create({
     container:{
         flex: 1,
+        marginTop: StatusBar.currentHeight || 0,
         justifyContent: 'center',
         alignItems:'center',
         backgroundColor: 'pink'
