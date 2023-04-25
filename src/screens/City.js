@@ -12,7 +12,8 @@ const City = () =>{
             >
 
             </ImageBackground>
-            <Text>City</Text>
+            <Text>City: London</Text>
+            <Text>Country: UK </Text>
         </SafeAreaView>
     )
 }
