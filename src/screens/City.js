@@ -6,6 +6,11 @@ const City = () =>{
     const {container} = styles
     return(
         <SafeAreaView style={container}>
+            <ImageBackground
+                source={require('../../assets/')}
+            >
+
+            </ImageBackground>
             <Text>City</Text>
         </SafeAreaView>
     )
