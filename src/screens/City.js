@@ -3,11 +3,12 @@ import { SafeAreaView ,View, Text , StyleSheet, ImageBackground} from "react-nat
 
 //* A nossa Tela.
 const City = () =>{
-    const {container} = styles
+    const {container,imageLayout} = styles
     return(
         <SafeAreaView style={container}>
             <ImageBackground
-                source={require('../../assets/')}
+                source={require('../../assets/city-background.jpg')}
+                styles={imageLayout}
             >
 
             </ImageBackground>
@@ -23,6 +24,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems:'center',
         backgroundColor: 'pink'
+    },
+    imageLayout:{
+        flex:1,
     }
 })
 
