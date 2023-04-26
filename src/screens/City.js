@@ -3,7 +3,7 @@ import { SafeAreaView ,View, Text , StyleSheet, ImageBackground, StatusBar} from
 
 //* A nossa Tela.
 const City = () =>{
-    const {container,imageLayout} = styles
+    const {container,imageLayout, countryName, cityName} = styles
     return(
         <SafeAreaView style={container}>
             <ImageBackground
@@ -12,8 +12,8 @@ const City = () =>{
             >
 
             </ImageBackground>
-            <Text>City: London</Text>
-            <Text>Country: UK </Text>
+            <Text style={cityName}>City: London</Text>
+            <Text style={countryName}>Country: UK </Text>
         </SafeAreaView>
     )
 }
