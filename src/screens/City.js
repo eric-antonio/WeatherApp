@@ -33,7 +33,16 @@ const styles = StyleSheet.create({
     cityName:{
         justifyContent:'center',
         alignSelf:'center',
-        fontSize:'40'
+        fontSize:'40',
+        fontWeight:'bold',
+        color:'white'
+    },
+    countryName:{
+        justifyContent:'center',
+        alignSelf:'center',
+        fontSize:'40',
+        fontWeight:'bold',
+        color:'white'
     }
 })
 
