@@ -29,6 +29,11 @@ const styles = StyleSheet.create({
     },
     imageLayout:{
         flex:1,
+    },
+    cityName:{
+        justifyContent:'center',
+        alignSelf:'center',
+        fontSize:'40'
     }
 })
 
