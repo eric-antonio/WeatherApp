@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     countryName:{
         justifyContent:'center',
         alignSelf:'center',
-        fontSize:'40',
+        fontSize:'30',
         fontWeight:'bold',
         color:'white'
     }
