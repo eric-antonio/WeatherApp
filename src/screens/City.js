@@ -1,6 +1,7 @@
 import React from "react";
 import { SafeAreaView ,View, Text , StyleSheet, ImageBackground, StatusBar} from "react-native";
 import { AntDesign } from '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';
 
 //* A nossa Tela.
 const City = () =>{
@@ -33,6 +34,7 @@ const City = () =>{
                 </View>
                 //* Sun set & Sun Rise
                 <View>
+                    <Feather name="sunrise" size={24} color="black" />
 
                 </View>
 
