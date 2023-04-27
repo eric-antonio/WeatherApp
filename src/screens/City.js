@@ -7,7 +7,7 @@ const City = () =>{
     const {container,imageLayout, countryName, cityName, cityText, populationWrapper, populationText} = styles
     return(
         <SafeAreaView style={container}>
-            
+
             //* Imagem de fundo.
             <ImageBackground
                 source={require('../../assets/city-background.jpg')}
@@ -20,6 +20,7 @@ const City = () =>{
                 <View style={populationWrapper}>
 
                     <AntDesign name="user" size={50} color="black" />
+                    
                     <Text style={populationText}>8000</Text>
 
                 </View>
