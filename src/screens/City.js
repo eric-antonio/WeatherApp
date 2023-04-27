@@ -9,7 +9,14 @@ const City = () =>{
     return(
         <SafeAreaView style={container}>
             {/* Imagem de fundo com componenetes por dentro.  */}
-            <Text>Hello</Text>
+            <ImageBackground
+                source={require('../../assets/city-background.jpg')}
+                styles={styles.imageLayout}
+            >
+
+                <Text>Hello</Text>
+                
+            </ImageBackground>
 
         </SafeAreaView>
     )
@@ -22,6 +29,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems:'center',
         backgroundColor: 'pink'
+    },
+    imageLayout:{
+        flex:1,
     }
 })
 
