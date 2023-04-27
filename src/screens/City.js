@@ -43,6 +43,11 @@ const styles = StyleSheet.create({
         fontSize:'30',
         fontWeight:'bold',
         color:'white'
+    },CityText:{
+        justifyContent:'center',
+        alignSelf:'center',
+        fontWeight:'bold',
+        color:'white'
     }
 })
 
