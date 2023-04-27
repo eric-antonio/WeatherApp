@@ -31,14 +31,12 @@ const styles = StyleSheet.create({
         flex:1,
     },
     cityName:{
-        justifyContent:'center',
-        alignSelf:'center',
+
         fontSize:'40',
-        fontWeight:'bold',
-        color:'white'
+        
     },
     countryName:{
-        
+
         fontSize:'30',
 
     },CityText:{
