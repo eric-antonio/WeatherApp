@@ -16,11 +16,11 @@ const City = () =>{
         riseSetText
     } = styles
     return(
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView style={container}>
 
             <ImageBackground
                 source={require('../../assets/city-background.jpg')}
-                style={styles.image}
+                style={imageLayout}
             >
 
 
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
         marginTop: StatusBar.currentHeight || 0,
         backgroundColor:'#00bfff'
     },
-    image:{
+    imageLayout:{
        flex:1
     }
 
