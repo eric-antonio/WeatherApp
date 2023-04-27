@@ -15,6 +15,11 @@ const City = () =>{
             </ImageBackground>
             <Text style={[cityName, cityText]}>City: London</Text>
             <Text style={[countryName,cityText]}>Country: UK </Text>
+            
+            //* View que ira receber o icon da população!
+            <View>
+
+            </View>
         </SafeAreaView>
     )
 }
