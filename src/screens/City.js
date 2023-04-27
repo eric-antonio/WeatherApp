@@ -22,8 +22,8 @@ const City = () =>{
                 source={require('../../assets/city-background.jpg')}
                 style={imageLayout}
             >
-                <Text style={[cityName, cityText]}>City: London</Text>
-                <Text style={[countryName,cityText]}>Country: UK </Text>
+                <Text style={[cityName, cityText]}> London</Text>
+                <Text style={[countryName,cityText]}> UK </Text>
 
                 {/* Poupulation View */}
                 <View style={populationWrapper}>
@@ -37,10 +37,10 @@ const City = () =>{
                 {/* * Sun set & Sun Rise */}
                 <View style={riseSetWrapper}>
 
-                    <Text style={riseSetText}>Sunrise 10:46:58am </Text>
+                    <Text style={riseSetText}>10:46:58am </Text>
                     <Feather name="sunrise" size={50} color="white" />
 
-                    <Text style={riseSetText}>Sunset 17:49:51pm </Text>
+                    <Text style={riseSetText}> 17:49:51pm </Text>
                     <Feather name="sunset" size={50} color="white" />
 
                 </View>
