@@ -1,10 +1,10 @@
 import React from "react";
 import { SafeAreaView ,View, Text , StyleSheet, ImageBackground, StatusBar} from "react-native";
-import {Feather} from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
 
 //* A nossa Tela.
 const City = () =>{
-    const {container,imageLayout, countryName, cityName, cityText} = styles
+    const {container,imageLayout, countryName, cityName, cityText, populationWrapper} = styles
     return(
         <SafeAreaView style={container}>
             <ImageBackground
@@ -17,9 +17,11 @@ const City = () =>{
             <Text style={[countryName,cityText]}>Country: UK </Text>
 
             //* View que ira receber o icon da população!
-            <View>
-                <Feather/>
-                <Text></Text>
+            <View style={populationWrapper}>
+
+                <AntDesign name="user" size={50} color="black" />
+                <Text>8000</Text>
+                
             </View>
         </SafeAreaView>
     )
