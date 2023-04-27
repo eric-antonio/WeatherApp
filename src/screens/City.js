@@ -13,7 +13,7 @@ const City = () =>{
 
             </ImageBackground>
             <Text style={[cityName, cityText]}>City: London</Text>
-            <Text style={countryName}>Country: UK </Text>
+            <Text style={[countryName,cityText]}>Country: UK </Text>
         </SafeAreaView>
     )
 }
