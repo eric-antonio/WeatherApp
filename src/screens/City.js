@@ -34,7 +34,10 @@ const City = () =>{
                 </View>
                 //* Sun set & Sun Rise
                 <View>
+                    <Text>Sunrise</Text>
                     <Feather name="sunrise" size={24} color="black" />
+                    <Text>Sunset</Text>
+                    <Feather name="sunset" size={24} color="black" />
 
                 </View>
 
