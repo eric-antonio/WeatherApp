@@ -31,6 +31,10 @@ const City = () =>{
                     <Text style={populationText}>8000</Text>
 
                 </View>
+                //* Sun set & Sun Rise
+                <View>
+
+                </View>
 
             </ImageBackground>
 
