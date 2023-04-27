@@ -52,12 +52,12 @@ const styles = StyleSheet.create({
     },
     cityName:{
 
-        fontSize:'40',
+        fontSize:40,
 
     },
     countryName:{
 
-        fontSize:'30',
+        fontSize:40,
 
     },cityText:{
         justifyContent:'center',
@@ -73,6 +73,10 @@ const styles = StyleSheet.create({
 
     },
     populationText:{
+        fontSize: 24,
+        marginLeft: 8,
+        color : 'black',
+        fontWeight:'bold'
 
     }
 })
