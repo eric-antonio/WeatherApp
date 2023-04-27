@@ -1,5 +1,6 @@
 import React from "react";
 import { SafeAreaView ,View, Text , StyleSheet, ImageBackground, StatusBar} from "react-native";
+import {Feather} from '@expo/vector-icons';
 
 //* A nossa Tela.
 const City = () =>{
