@@ -92,6 +92,15 @@ const styles = StyleSheet.create({
         color : 'black',
         fontWeight:'bold'
 
+    },riseSetWrapper:{
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'space-around',
+        marginTop:20
+    },
+    riseSetText:{
+        fontSize:20,
+        color:'white'
     }
     
 })
