@@ -59,6 +59,45 @@ const styles = StyleSheet.create({
     },
     imageLayout:{
        flex:1
+    },
+    cityName:{
+
+        fontSize:40,
+
+    },
+    countryName:{
+
+        fontSize:40,
+
+    },cityText:{
+        justifyContent:'center',
+        alignSelf:'center',
+        fontWeight:'bold',
+        color:'white'
+    },
+    populationWrapper:{
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'center',
+        marginTop:30
+
+    },
+    populationText:{
+        fontSize: 24,
+        marginLeft: 8,
+        color : 'black',
+        fontWeight:'bold'
+
+    },riseSetWrapper:{
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'space-around',
+        marginTop:20
+    },
+    riseSetText:{
+        fontSize:20,
+        color:'white',
+        fontWeight:'bold'
     }
 
 })
