@@ -4,7 +4,14 @@ import { AntDesign } from '@expo/vector-icons';
 
 //* A nossa Tela.
 const City = () =>{
-    const {container,imageLayout, countryName, cityName, cityText, populationWrapper, populationText} = styles
+    const{ container,
+            imageLayout,
+            countryName, 
+            cityName, 
+            cityText, 
+            populationWrapper, 
+            populationText
+        } = styles
     return(
         <SafeAreaView style={container}>
 
