@@ -38,11 +38,9 @@ const styles = StyleSheet.create({
         color:'white'
     },
     countryName:{
-        justifyContent:'center',
-        alignSelf:'center',
+        
         fontSize:'30',
-        fontWeight:'bold',
-        color:'white'
+
     },CityText:{
         justifyContent:'center',
         alignSelf:'center',
