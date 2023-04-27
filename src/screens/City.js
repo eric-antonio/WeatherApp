@@ -11,12 +11,14 @@ const City = () =>{
             cityName, 
             cityText, 
             populationWrapper, 
-            populationText
+            populationText,
+            riseSetWrapper,
+            riseSetText
         } = styles
     return(
         <SafeAreaView style={container}>
             {/* Imagem de fundo com componenetes por dentro.  */}
-            
+
             <ImageBackground
                 source={require('../../assets/city-background.jpg')}
                 styles={imageLayout}
@@ -34,11 +36,13 @@ const City = () =>{
                 </View>
                 
                 {/* * Sun set & Sun Rise */}
-                <View>
-                    <Text>Sunrise</Text>
-                    <Feather name="sunrise" size={24} color="black" />
-                    <Text>Sunset</Text>
-                    <Feather name="sunset" size={24} color="black" />
+                <View style={riseSetWrapper}>
+
+                    <Text style={riseSetText}>Sunrise 10:46:58am </Text>
+                    <Feather name="sunrise" size={50} color="white" />
+
+                    <Text style={riseSetText}>Sunset 17:49:51pm </Text>
+                    <Feather name="sunset" size={50} color="white" />
 
                 </View>
 
@@ -58,6 +62,7 @@ const styles = StyleSheet.create({
     },
     imageLayout:{
         flex:1,
+        
     },
     cityName:{
 
