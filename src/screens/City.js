@@ -3,27 +3,26 @@ import { SafeAreaView ,View, Text , StyleSheet, ImageBackground, StatusBar} from
 import { AntDesign } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 
-
 //* A nossa Tela.
 const City = () =>{
     const{ container,
-        imageLayout,
-        countryName, 
-        cityName, 
-        cityText, 
-        populationWrapper, 
-        populationText,
-        riseSetWrapper,
-        riseSetText
-    } = styles
+            imageLayout,
+            countryName, 
+            cityName, 
+            cityText, 
+            populationWrapper, 
+            populationText,
+            riseSetWrapper,
+            riseSetText
+        } = styles
     return(
         <SafeAreaView style={container}>
             {/* Imagem de fundo com componenetes por dentro.  */}
+
             <ImageBackground
                 source={require('../../assets/city-background.jpg')}
                 styles={imageLayout}
             >
-
                 <Text style={[cityName, cityText]}>City: London</Text>
                 <Text style={[countryName,cityText]}>Country: UK </Text>
 
@@ -47,7 +46,6 @@ const City = () =>{
 
                 </View>
 
-                
             </ImageBackground>
 
         </SafeAreaView>
@@ -57,11 +55,11 @@ const City = () =>{
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        marginTop: StatusBar.currentHeight || 0
+        marginTop: StatusBar.currentHeight || 0,
     },
     imageLayout:{
         flex:1,
-        
+        height:100
         
     },
     cityName:{
@@ -103,6 +101,7 @@ const styles = StyleSheet.create({
         color:'white',
         fontWeight:'bold'
     }
+    
 })
 
 export default City;
