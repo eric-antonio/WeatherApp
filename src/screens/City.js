@@ -22,6 +22,17 @@ const City = () =>{
                 source={require('../../assets/city-background.jpg')}
                 style={imageLayout}
             >
+                <Text style={[cityName, cityText]}>City: London</Text>
+                <Text style={[countryName,cityText]}>Country: UK </Text>
+
+                {/* Poupulation View */}
+                <View style={populationWrapper}>
+
+                    <AntDesign name="user" size={50} color="black" />
+
+                    <Text style={populationText}>8000</Text>
+
+                </View>
 
 
             </ImageBackground>
