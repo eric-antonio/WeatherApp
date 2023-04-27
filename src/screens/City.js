@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     },
     populationText:{
         fontSize: 24,
-        marginLeft: 8,
+        marginLeft: 7.5,
         color : 'black',
         fontWeight:'bold'
 
