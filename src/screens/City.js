@@ -20,7 +20,7 @@ const City = () =>{
                 <View style={populationWrapper}>
 
                     <AntDesign name="user" size={50} color="black" />
-                    
+
                     <Text style={populationText}>8000</Text>
 
                 </View>
@@ -57,6 +57,16 @@ const styles = StyleSheet.create({
         alignSelf:'center',
         fontWeight:'bold',
         color:'white'
+    },
+    populationWrapper:{
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'center',
+        marginTop:30
+
+    },
+    populationText:{
+
     }
 })
 
