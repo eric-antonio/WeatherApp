@@ -12,7 +12,7 @@ const City = () =>{
             >
 
             </ImageBackground>
-            <Text style={cityName}>City: London</Text>
+            <Text style={[cityName, cityText]}>City: London</Text>
             <Text style={countryName}>Country: UK </Text>
         </SafeAreaView>
     )
@@ -33,13 +33,13 @@ const styles = StyleSheet.create({
     cityName:{
 
         fontSize:'40',
-        
+
     },
     countryName:{
 
         fontSize:'30',
 
-    },CityText:{
+    },cityText:{
         justifyContent:'center',
         alignSelf:'center',
         fontWeight:'bold',
