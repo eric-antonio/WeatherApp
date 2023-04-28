@@ -4,14 +4,14 @@ import { Feather } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
 const IconsText = (props) =>{
-    const {iconName , iconColor ,  bodyText} = props
-    const {textTheme}  = styles
+    const {iconName , iconColor ,  bodyText, bodyTextStyles} = props
+
     return(
         <View>
             
             <AntDesign name={iconName} size={50} color={iconColor} />
 
-            <Text style={textTheme}>{bodyText}</Text>
+            <Text style={ [ styles.textTheme, bodyTextStyles ] }>{bodyText}</Text>
 
         </View>
     )
