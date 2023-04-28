@@ -5,9 +5,9 @@ import { AntDesign } from '@expo/vector-icons';
 
 const IconsText = () =>{
     return(
-        <SafeAreaView>
-
-        </SafeAreaView>
+        <View>
+            
+        </View>
     )
 }
 
