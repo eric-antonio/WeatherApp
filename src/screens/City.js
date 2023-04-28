@@ -46,6 +46,8 @@ const City = () =>{
                         bodyTextStyles = {riseSetText}
                     />
 
+                    <IconText/>
+
                     <Text style={riseSetText}> 17:49:51pm </Text>
                     <Feather name="sunset" size={50} color="white" />
 
