@@ -28,7 +28,12 @@ const City = () =>{
 
                 {/* Poupulation View */}
                 <View style={populationWrapper}>
-                    <IconText/>
+                    <IconText 
+                        iconName={'user'} 
+                        iconColor={'white'} 
+                        bodyText={'8000'}
+                        bodyTextStyles={populationText}
+                    />
                 </View>
 
                 {/* * Sun set & Sun Rise */}
