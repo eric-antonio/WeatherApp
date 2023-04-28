@@ -9,7 +9,7 @@ const IconsText = () =>{
             
             <AntDesign name={iconName} size={50} color={iconColor} />
 
-            <Text style={populationText}>8000</Text>
+            <Text style={populationText}>{bodyText}</Text>
 
         </View>
     )
