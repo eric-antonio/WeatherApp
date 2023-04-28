@@ -85,8 +85,7 @@ const styles = StyleSheet.create({
     populationText:{
         fontSize: 24,
         marginLeft: 7.5,
-        color : 'black',
-        fontWeight:'bold'
+        color : 'black'
 
     },riseSetWrapper:{
         flexDirection:'row',
@@ -96,8 +95,7 @@ const styles = StyleSheet.create({
     },
     riseSetText:{
         fontSize:20,
-        color:'white',
-        fontWeight:'bold'
+        color:'white'
     }
 
 })
