@@ -10,4 +10,8 @@ const IconsText = () =>{
     )
 }
 
+const styles = StyleSheet.create({
+    
+})
+
 export default IconsText;
