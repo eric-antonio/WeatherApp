@@ -40,7 +40,7 @@ const City = () =>{
                 <View style={riseSetWrapper}>
 
                     <IconText
-                        iconName = {'sunrise'}
+                        iconName = {"sunrise"}
                         iconColor = {'white'}
                         bodyText = {'10:46:58am'}
                         bodyTextStyles = {riseSetText}
