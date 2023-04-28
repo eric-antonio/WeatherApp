@@ -39,8 +39,15 @@ const City = () =>{
                 {/* * Sun set & Sun Rise */}
                 <View style={riseSetWrapper}>
 
-                    <Text style={riseSetText}>10:46:58am </Text>
-                    <Feather name="sunrise" size={50} color="white" />
+                    <IconText
+                        iconName = {'sunrise'}
+                        iconColor = {'white'}
+                        bodyText = {'10:46:58am'}
+                        bodyTextStyles = {riseSetText}
+
+                    />
+
+              
 
                     <Text style={riseSetText}> 17:49:51pm </Text>
                     <Feather name="sunset" size={50} color="white" />
