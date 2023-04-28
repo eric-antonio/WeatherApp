@@ -7,6 +7,10 @@ const IconsText = () =>{
     return(
         <View>
             
+            <AntDesign name="user" size={50} color="black" />
+
+            <Text style={populationText}>8000</Text>
+
         </View>
     )
 }
