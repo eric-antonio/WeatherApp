@@ -19,7 +19,7 @@ const IconsText = (props) =>{
 
 const styles = StyleSheet.create({
     textTheme:{
-        
+        fontWeight: 'bold'
     }
 
 })
