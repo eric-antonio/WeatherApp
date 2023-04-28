@@ -2,7 +2,7 @@ import React from "react";
 import { SafeAreaView ,View, Text , StyleSheet, ImageBackground, StatusBar} from "react-native";
 import { Feather } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
-import IconsText from "../components/iconsText";
+import IconsText from "../components/IconText";
 
 
 const City = () =>{
