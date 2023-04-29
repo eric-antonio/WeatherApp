@@ -19,13 +19,24 @@ const  CurrentWeather = ()=> {
           messageOne ={'High: 8 '} 
           messageTwo = {'Low: 6'} 
           containerStyles ={styles.higLowWrapper} 
+          messageOneStyles = {styles.higLow}
+          messageTwoStyles = {styles.higLow}
         />
       </View>
 
       {/* New View The Body Wrapper */}
+      <RowText 
+        messageOne = {"It's Sunny"}
+        messageTwo = {"It's perfect t-shirt weather"}
+        containerStyles = {styles.bodyWrapper} 
+        messageOneStyles ={styles.description} 
+        messageTwoStyles = {styles.message}
+      />
+
+
       <View style={styles.bodyWrapper}>
         <Text style={styles.description}>It's Sunny</Text>
-        <Text style={styles.message}>It's perfect t-shirt weather</Text>
+        <Text style={styles.message}></Text>
       </View>
 
     </SafeAreaView>
