@@ -9,4 +9,8 @@ const RowText = ()=> {
     )
 }
 
+const styles =  StyleSheet.create({
+    
+})
+
 export default RowText;
