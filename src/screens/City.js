@@ -24,11 +24,11 @@ const City = () =>{
                 source={require('../../assets/city-background.jpg')}
                 style={imageLayout}
             >
-                <Text style={[cityName, cityText]}> London</Text>
-                <Text style={[countryName,cityText]}> UK </Text>
+                <Text style={ [ cityName , cityText ] }> London</Text>
+                <Text style={ [ countryName ,cityText ] }> UK </Text>
 
                 {/* Poupulation View */}
-                <View style={[populationWrapper,rowLayout]}>
+                <View style={ [ populationWrapper , rowLayout ] }>
                     <IconText 
                         iconName={'user'} 
                         iconColor={'white'} 
@@ -38,7 +38,7 @@ const City = () =>{
                 </View>
 
                 {/* * Sun set & Sun Rise */}
-                <View style={[riseSetWrapper,rowLayout]}>
+                <View style={ [ riseSetWrapper , rowLayout ] }>
 
                     <IconText
                         iconName = {"sunrise"}
