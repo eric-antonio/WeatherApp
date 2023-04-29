@@ -5,13 +5,14 @@ import { Feather } from '@expo/vector-icons';
 
 const IconsText = (props) =>{
     const {iconName , iconColor ,  bodyText, bodyTextStyles} = props
+    const {container , textTheme} = styles
 
     return(
-        <View styles={styles.container}>
+        <View styles={container}>
             
             <Feather name={iconName} size={50} color={iconColor} />
 
-            <Text style={ [ styles.textTheme, bodyTextStyles ] }>{bodyText}</Text>
+            <Text style={ [ textTheme, bodyTextStyles ] }>{bodyText}</Text>
 
         </View>
     )
