@@ -107,6 +107,10 @@ const styles = StyleSheet.create({
     riseSetText:{
         fontSize:20,
         color:'white'
+    },
+    rowLayout:{
+        flexDirection:'row',
+        alignItems:'center'
     }
 
 })
