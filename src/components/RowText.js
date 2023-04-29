@@ -6,13 +6,13 @@ const RowText = (props)=> {
     const {
         messageOne,
         messageTwo,
-        container,
+        containerStyles,
         messageOneStyles ,
         messageTwoStyles
     } = styles
-    
+
     return(
-        <View style={container}>
+        <View style={containerStyles}>
 
           <Text style={messageOneStyles}>{messageOne}</Text>
           <Text style={messageTwoStyles}>{messageTwo} </Text>
