@@ -97,8 +97,6 @@ const styles = StyleSheet.create({
         color : 'black'
 
     },riseSetWrapper:{
-        flexDirection:'row',
-        alignItems:'center',
         justifyContent:'space-around',
         marginTop:20
     },
