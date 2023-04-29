@@ -14,7 +14,8 @@ const City = () =>{
         populationWrapper, 
         populationText,
         riseSetWrapper,
-        riseSetText
+        riseSetText,
+        rowLayout
     } = styles
     return(
         <SafeAreaView style={container}>
@@ -27,7 +28,7 @@ const City = () =>{
                 <Text style={[countryName,cityText]}> UK </Text>
 
                 {/* Poupulation View */}
-                <View style={populationWrapper}>
+                <View style={[populationWrapper,rowLayout]}>
                     <IconText 
                         iconName={'user'} 
                         iconColor={'white'} 
@@ -37,7 +38,7 @@ const City = () =>{
                 </View>
 
                 {/* * Sun set & Sun Rise */}
-                <View style={riseSetWrapper}>
+                <View style={[riseSetWrapper,rowLayout]}>
 
                     <IconText
                         iconName = {"sunrise"}
