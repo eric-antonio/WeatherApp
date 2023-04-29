@@ -2,8 +2,8 @@ import React from "react";
 import { View, Text , StyleSheet} from "react-native";
 
 const RowText = (props)=> {
-    const { messageOne, messageTwo} =  props
-    const {container, messageOneStyles , messageTwoStyles} = styles
+    
+    const {messageOne, messageTwo, container, messageOneStyles , messageTwoStyles} = styles
     return(
         <View style={container}>
 
