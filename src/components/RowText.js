@@ -2,13 +2,13 @@ import React from "react";
 import { View, Text , StyleSheet} from "react-native";
 
 const RowText = (props)=> {
-    const {higLow ,  messageOne, messageToo} =  props
+    const {higLow ,  messageOne, messageTwo} =  props
     const {higLowWrapper} = styles
     return(
         <View style={styles.higLowWrapper}>
 
-          <Text style={styles.higLow}>{messageOne}</Text>
-          <Text style={styles.higLow}>{messageToo} </Text>
+          <Text style={higLow}>{messageOne}</Text>
+          <Text style={higLow}>{messageTwo} </Text>
 
         </View>
     )
