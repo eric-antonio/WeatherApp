@@ -7,7 +7,7 @@ const IconsText = (props) =>{
     const {iconName , iconColor ,  bodyText, bodyTextStyles} = props
 
     return(
-        <View>
+        <View styles={styles.container}>
             
             <Feather name={iconName} size={50} color={iconColor} />
 
@@ -18,6 +18,9 @@ const IconsText = (props) =>{
 }
 
 const styles = StyleSheet.create({
+    container:{
+        alignItems:'center'
+    },
     textTheme:{
         fontWeight: 'bold'
     }
