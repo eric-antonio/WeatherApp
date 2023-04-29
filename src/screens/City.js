@@ -87,8 +87,6 @@ const styles = StyleSheet.create({
         color:'white'
     },
     populationWrapper:{
-        flexDirection:'row',
-        alignItems:'center',
         justifyContent:'center',
         marginTop:30
 
