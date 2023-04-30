@@ -8,21 +8,7 @@ const  CurrentWeather = ()=> {
     <SafeAreaView style={styles.wrapper}>
 
       {/* The main View of the Application */}
-      <View style={styles.container}>
-        {/* Applying a icon   */}
-       <Feather name="sun" size={74} color="black" />
-       <Text style={styles.temp}>6</Text>
-       <Text style={styles.feels}>Feels like 5</Text>
 
-        {/* RowText Component */}
-        <RowText 
-          messageOne ={'High: 8 '} 
-          messageTwo = {'Low: 6'} 
-          containerStyles ={styles.higLowWrapper} 
-          messageOneStyles = {styles.higLow}
-          messageTwoStyles = {styles.higLow}
-        />
-      </View>
 
       {/* New View The Body Wrapper */}
       <RowText 
