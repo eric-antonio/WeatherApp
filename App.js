@@ -9,7 +9,9 @@ const App =()=>{
 
   return(
     <NavigationContainer>
-
+      <View style={styles.container}>
+        <CurrentWeather/>
+      </View>
     </NavigationContainer>
 
   )
