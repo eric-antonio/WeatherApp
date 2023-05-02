@@ -11,10 +11,16 @@ const App =()=>{
 
   return(
     <NavigationContainer>
+
       <Tab.Navigator>
+
         <View style={styles.container}>
+
+          <Tab.Screen name={'CurrentWeather'} component={CurrentWeather}/>
           <CurrentWeather/>
+
         </View>
+        
       </Tab.Navigator>
 
     </NavigationContainer>
