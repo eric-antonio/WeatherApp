@@ -5,7 +5,7 @@ import RowText from '../components/RowText';
 
 const  CurrentWeather = ()=> {
 
-  const {} = styles
+  const {temp,feels,higLowWrapper,higLow,bodyWrapper,description,message} = styles
   return (
     <SafeAreaView style={styles.wrapper}>
 
