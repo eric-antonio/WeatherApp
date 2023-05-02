@@ -16,11 +16,13 @@ const App =()=>{
 
         <View style={styles.container}>
 
-          <Tab.Screen name={'CurrentWeather'} component={CurrentWeather}/>
+          <Tab.Screen name={'Current'} component={CurrentWeather}/>
+          <Tab.Screen name={'Upcoming'} component={UpcomingWeather}/>
+          <Tab.Screen nme={'City'} component={City}/>
           <CurrentWeather/>
 
         </View>
-        
+
       </Tab.Navigator>
 
     </NavigationContainer>
