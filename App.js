@@ -14,14 +14,13 @@ const App =()=>{
 
       <Tab.Navigator>
 
-        <View style={styles.container}>
 
-          <Tab.Screen name={'Current'} component={CurrentWeather}/>
-          <Tab.Screen name={'Upcoming'} component={UpcomingWeather}/>
-          <Tab.Screen nme={'City'} component={City}/>
-          <CurrentWeather/>
 
-        </View>
+        <Tab.Screen name={'Current'} component={CurrentWeather}/>
+        <Tab.Screen name={'Upcoming'} component={UpcomingWeather}/>
+        <Tab.Screen nme={'City'} component={City}/>
+
+        
 
       </Tab.Navigator>
 
