@@ -6,10 +6,12 @@ import City from "./src/screens/City";
 import { NavigationContainer } from "@react-navigation/native";
 
 const App =()=>{
+
   return(
-    <View style={styles.container}>
-      <CurrentWeather/>
-    </View>
+    <NavigationContainer>
+
+    </NavigationContainer>
+
   )
 }
 
