@@ -19,7 +19,7 @@ const  CurrentWeather = ()=> {
     <SafeAreaView style={styles.wrapper}>
 
       {/* The main View of the Application */}
-      <View style={styles.container}>
+      <View style={container}>
         {/* Applying a icon   */}
        <Feather name="sun" size={74} color="black" />
        <Text style={temp}>6</Text>
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
 
   wrapper:{
     flex: 1,
-    backgroundColor:'pink',
+    backgroundColor:'#00bfff',
   },
   container :{
  
