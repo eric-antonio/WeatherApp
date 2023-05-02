@@ -6,6 +6,7 @@ import City from "./src/screens/City";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
+const Tab = createBottomTabNavigator()
 const App =()=>{
 
   return(
