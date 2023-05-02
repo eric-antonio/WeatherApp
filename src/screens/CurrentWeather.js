@@ -4,6 +4,8 @@ import { Feather } from '@expo/vector-icons';
 import RowText from '../components/RowText';
 
 const  CurrentWeather = ()=> {
+
+  const {} = styles
   return (
     <SafeAreaView style={styles.wrapper}>
 
