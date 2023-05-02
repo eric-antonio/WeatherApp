@@ -36,9 +36,9 @@ const  CurrentWeather = ()=> {
       />
 
 
-      <View style={styles.bodyWrapper}>
-        <Text style={styles.description}>It's Sunny</Text>
-        <Text style={styles.message}></Text>
+      <View style={bodyWrapper}>
+        <Text style={description}>It's Sunny</Text>
+        <Text style={message}></Text>
       </View>
 
     </SafeAreaView>
