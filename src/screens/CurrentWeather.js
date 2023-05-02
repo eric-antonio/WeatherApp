@@ -1,5 +1,5 @@
 import React from 'react';
-import {  SafeAreaView,Text, View , StyleSheet} from 'react-native';
+import {  SafeAreaView,Text, View , StyleSheet,StatusBar} from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import RowText from '../components/RowText';
 
@@ -62,7 +62,8 @@ const styles = StyleSheet.create({
  
     flex:1,
     alignItems:'center',
-    justifyContent:'center'
+    justifyContent:'center',
+    marginTop: StatusBar.currentHeight || 0,
     
   },
   temp:{
