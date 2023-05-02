@@ -11,6 +11,9 @@ const App =()=>{
 
   return(
     <NavigationContainer>
+      <Tab.Navigator>
+        
+      </Tab.Navigator>
       <View style={styles.container}>
         <CurrentWeather/>
       </View>
