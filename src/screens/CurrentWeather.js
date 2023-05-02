@@ -6,6 +6,7 @@ import RowText from '../components/RowText';
 const  CurrentWeather = ()=> {
 
   const {
+    container,
     temp,
     feels,
     higLowWrapper,
