@@ -15,7 +15,7 @@ const App =()=>{
 
         <Tab.Screen name={'Current'} component={CurrentWeather}/>
         <Tab.Screen name={'Upcoming'} component={UpcomingWeather}/>
-        <Tab.Screen nme={'City'} component={City}/>
+        
 
       </Tab.Navigator>
 
