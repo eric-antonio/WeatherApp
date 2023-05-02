@@ -13,16 +13,16 @@ const  CurrentWeather = ()=> {
       <View style={styles.container}>
         {/* Applying a icon   */}
        <Feather name="sun" size={74} color="black" />
-       <Text style={styles.temp}>6</Text>
-       <Text style={styles.feels}>Feels like 5</Text>
+       <Text style={temp}>6</Text>
+       <Text style={feels}>Feels like 5</Text>
 
         {/* RowText Component */}
         <RowText 
           messageOne ={'High: 8 '} 
           messageTwo = {'Low: 6'} 
-          containerStyles ={styles.higLowWrapper} 
-          messageOneStyles = {styles.higLow}
-          messageTwoStyles = {styles.higLow}
+          containerStyles ={higLowWrapper} 
+          messageOneStyles = {higLow}
+          messageTwoStyles = {higLow}
         />
       </View>
 
@@ -30,9 +30,9 @@ const  CurrentWeather = ()=> {
       <RowText 
         messageOne = {"It's Sunny"}
         messageTwo = {"It's perfect t-shirt weather"}
-        containerStyles = {styles.bodyWrapper} 
-        messageOneStyles ={styles.description} 
-        messageTwoStyles = {styles.message}
+        containerStyles = {bodyWrapper} 
+        messageOneStyles ={description} 
+        messageTwoStyles = {message}
       />
 
 
