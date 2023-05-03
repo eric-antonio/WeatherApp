@@ -5,6 +5,7 @@ import City from "./src/screens/City";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Feather } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
 
 
 const App =()=>{
@@ -51,7 +52,7 @@ const App =()=>{
           component={City}
           options={{
             tabBarIcon:({focused}) =>(
-              <Feather
+              <AntDesign
                 name={'home'}
                 size={25}
                 color={focused ? '#00bfff' : 'black'}
