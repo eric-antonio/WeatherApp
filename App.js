@@ -44,9 +44,22 @@ const App =()=>{
           }}
         />
 
-        
+
         {/* Icon City */}
-        <Tab.Screen name= {'City'} component={City}/>
+        <Tab.Screen 
+          name= {'City'} 
+          component={City}
+          options={{
+            tabBarIcon:({focused}) =>(
+              <Feather
+                name={'droplet'}
+                size={25}
+                color={focused ? '#00bfff' : 'black'}
+              />
+            )
+          }}
+        
+        />
 
       </Tab.Navigator>
 
