@@ -14,12 +14,26 @@ const App =()=>{
 
       <Tab.Navigator
         screenOptions={{
-          tabBarActiveTintColor:'tomato',
+          tabBarActiveTintColor:'#00bfff',
           tabBarInactiveTintColor:'grey '
         }}
       >
 
-        <Tab.Screen name={'Current'} component={CurrentWeather}/>
+        <Tab.Screen 
+          name={'Current'} 
+          component={CurrentWeather}
+          options={{
+            tabBarIcon: ({focused}) =>(
+              <Feather
+                name={'droplet'}
+                size={25}
+                color={focused ? '#00bfff' : 'black'}
+              />
+            )
+          }}
+        
+        />
+        
         <Tab.Screen name={'Upcoming'} component={UpcomingWeather}/>
         <Tab.Screen name= {'City'} component={City}/>
 
