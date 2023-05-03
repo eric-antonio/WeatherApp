@@ -11,7 +11,12 @@ const App =()=>{
   return(
     <NavigationContainer>
 
-      <Tab.Navigator>
+      <Tab.Navigator
+        screenOptions={{
+          tabBarActiveTintColor:'tomato',
+          tabBarInactiveTintColor:'grey '
+        }}
+      >
 
         <Tab.Screen name={'Current'} component={CurrentWeather}/>
         <Tab.Screen name={'Upcoming'} component={UpcomingWeather}/>
