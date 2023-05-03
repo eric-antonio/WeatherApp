@@ -36,7 +36,7 @@ const App =()=>{
           options={{
             tabBarIcon:({focused}) =>(
               <Feather
-                name={'droplet'}
+                name={'clock'}
                 size={25}
                 color={focused ? '#00bfff' : 'black'}
               />
@@ -52,7 +52,7 @@ const App =()=>{
           options={{
             tabBarIcon:({focused}) =>(
               <Feather
-                name={'droplet'}
+                name={'home'}
                 size={25}
                 color={focused ? '#00bfff' : 'black'}
               />
