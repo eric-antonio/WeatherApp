@@ -20,14 +20,7 @@ const App =()=>{
           name={'Current'} 
           component={CurrentWeather}
           options={{
-            tabBarIcon: ({focused}) =>(
-              <Feather
-                name={'droplet'}
-                size={25}
-                color={focused ? '#00bfff' : 'black'}
-              />
-            )
-          }}
+            tabBarIc
         
         />
         {/* Icon Upcoming */}
