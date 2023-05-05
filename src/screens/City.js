@@ -13,14 +13,7 @@ const City = () =>{
         cityText, 
         populationWrapper, 
         populationText,
-        riseSetWrapper,
-        riseSetText,
-        rowLayout
-    } = styles
-    return(
-        <SafeAreaView style={container}>
-
-            <ImageBackground
+        
                 source={require('../../assets/city-background.jpg')}
                 style={imageLayout}
             >
