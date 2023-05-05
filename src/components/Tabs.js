@@ -7,7 +7,9 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Feather } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
+
 const Tabs =()=>{
+    const Tab = createBottomTabNavigator()
     return(
         <Tab.Navigator screenOptions={{tabBarActiveTintColor:'#00bfff',tabBarInactiveTintColor:'grey '}}>
 
