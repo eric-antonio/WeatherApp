@@ -16,7 +16,11 @@ const Tabs =()=>{
                 tabBarActiveTintColor:'#ffff',
                 tabBarInactiveTintColor:'grey ',
                 tabBarStyle:{
-                    backgroundColor:'#00bfff',
+                    backgroundColor:'lightskyblue ',
+                },
+                headerStyle:{
+                    
+                    backgroundColor:'lightskyblue '
                 }
             }}
         >
