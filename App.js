@@ -13,56 +13,6 @@ const App =()=>{
   return(
     <NavigationContainer>
 
-      <Tab.Navigator screenOptions={{tabBarActiveTintColor:'#00bfff',tabBarInactiveTintColor:'grey '}}>
-
-        {/* Icon Current  */}
-        <Tab.Screen 
-          name={'Current'} 
-          component={CurrentWeather}
-          options={{
-            tabBarIcon: ({focused}) =>(
-              <Feather
-                name={'droplet'}
-                size={25}
-                color={focused ? '#00bfff' : 'black'}
-              />
-            )
-          }}
-        
-        />
-        {/* Icon Upcoming */}
-        <Tab.Screen 
-          name={'Upcoming'} 
-          component={UpcomingWeather}
-          options={{
-            tabBarIcon:({focused}) =>(
-              <Feather
-                name={'clock'}
-                size={25}
-                color={focused ? '#00bfff' : 'black'}
-              />
-            )
-          }}
-        />
-
-
-        {/* Icon City */}
-        <Tab.Screen 
-          name= {'City'} 
-          component={City}
-          options={{
-            tabBarIcon:({focused}) =>(
-              <AntDesign
-                name={'home'}
-                size={25}
-                color={focused ? '#00bfff' : 'black'}
-              />
-            )
-          }}
-        
-        />
-
-      </Tab.Navigator>
 
     </NavigationContainer>
 
