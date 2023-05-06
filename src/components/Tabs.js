@@ -15,6 +15,9 @@ const Tabs =()=>{
             screenOptions={{
                 tabBarActiveTintColor:'blue',
                 tabBarInactiveTintColor:'grey ',
+                tabBarStyle:{
+                    backgroundColor: 'lightblue'
+                }
             
             }}
         >
