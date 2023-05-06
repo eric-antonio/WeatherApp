@@ -2,7 +2,7 @@ import React from 'react';
 import {  SafeAreaView,Text, View , StyleSheet,StatusBar} from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import RowText from '../components/RowText';
-
+import { weatherType } from '../utilities/weatherType';
 const  CurrentWeather = ()=> {
 
   const {
