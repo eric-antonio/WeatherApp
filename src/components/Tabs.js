@@ -13,15 +13,9 @@ const Tabs =()=>{
     return(
         <Tab.Navigator 
             screenOptions={{
-                tabBarActiveTintColor:'#ffff',
+                tabBarActiveTintColor:'blue',
                 tabBarInactiveTintColor:'grey ',
-                tabBarStyle:{
-                    backgroundColor:'lightskyblue ',
-                },
-                headerStyle:{
-                    
-                    backgroundColor:'lightskyblue '
-                }
+            
             }}
         >
 
@@ -34,7 +28,7 @@ const Tabs =()=>{
                 <Feather
                     name={'droplet'}
                     size={25}
-                    color={focused ? '#ffff' : 'black'}
+                    color={focused ? 'blue' : 'black'}
                 />
                 )
             }}
@@ -49,7 +43,7 @@ const Tabs =()=>{
                 <Feather
                     name={'clock'}
                     size={25}
-                    color={focused ? '#ffff' : 'black'}
+                    color={focused ? 'blue' : 'black'}
                 />
                 )
             }}
@@ -65,7 +59,7 @@ const Tabs =()=>{
                 <AntDesign
                     name={'home'}
                     size={25}
-                    color={focused ? '#ffff' : 'black'}
+                    color={focused ? 'blue' : 'black'}
                 />
                 )
             }}
