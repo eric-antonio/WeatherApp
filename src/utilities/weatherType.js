@@ -2,5 +2,9 @@ export const weatherType ={
     Thunderstorm:{},
     Drizzle:{},
     Rain:{},
-    Snow:{}
+    Snow:{},
+    Clear:{},
+    Clouds:{},
+    Haze:{},
+    Mist:{},
 }
