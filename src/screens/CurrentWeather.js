@@ -14,16 +14,6 @@ const  CurrentWeather = ()=> {
     bodyWrapper,
     description,
     message
-  } = styles
-  return (
-    <SafeAreaView style={styles.wrapper}>
-
-      {/* The main View of the Application */}
-      <View style={container}>
-        {/* Applying a icon   */}
-       <Feather name="sun" size={74} color="black" />
-       <Text style={temp}>6</Text>
-       <Text style={feels}>Feels like 5</Text>
 
         {/* RowText Component */}
         <RowText 
