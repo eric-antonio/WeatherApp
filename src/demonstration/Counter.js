@@ -5,7 +5,7 @@ const Counter =()=>{
     return(
         <View>
             <Text>{`Count: ${count}`}</Text>
-            <Button color={'red'}/>
+            <Button color={'red'} title={'Increase the count'} onPress={()=>{ count++}} />
             <Button color={'green'}/>
         </View>
     )
