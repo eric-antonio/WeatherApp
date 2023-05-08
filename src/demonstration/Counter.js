@@ -3,8 +3,12 @@ import { View , Text , Button , StyleSheet } from "react-native";
 const Counter =()=>{
     let count = 0
     return(
-        <View>
-            <Text>{`Count: ${count}`}</Text>
+        <View style={styles.container}>
+            
+            <Text>
+                {`Count: ${count}`}
+            </Text>
+
             <Button 
                 color={'red'}
                 title={'Increase the count'} 
