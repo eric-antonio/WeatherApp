@@ -5,7 +5,14 @@ const Counter =()=>{
     return(
         <View>
             <Text>{`Count: ${count}`}</Text>
-            <Button color={'red'} title={'Increase the count'} onPress={()=>{ count++}} />
+            <Button 
+                color={'red'}
+                title={'Increase the count'} 
+                onPress={()=>{
+                    count++
+                    console.log(count)
+                }} 
+            />
             <Button color={'green'}/>
         </View>
     )
@@ -14,4 +21,4 @@ const Counter =()=>{
 const styles = StyleSheet.create({
 
 })
-export default  Counter;
+export default  Counter; 
