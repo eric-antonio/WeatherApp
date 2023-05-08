@@ -5,7 +5,8 @@ const Counter =()=>{
     return(
         <View>
             <Text>{`Count: ${count}`}</Text>
-            <Button/>
+            <Button color={'red'}/>
+            <Button color={'green'}/>
         </View>
     )
 }
