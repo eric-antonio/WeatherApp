@@ -13,7 +13,14 @@ const Counter =()=>{
                     console.log(count)
                 }} 
             />
-            <Button color={'green'}/>
+            <Button 
+                title={'Decrease the count '}
+                color={'green'}
+                onPress={()=>{
+                    count--
+                    console.log(count)
+                }}
+            />
         </View>
     )
 }
