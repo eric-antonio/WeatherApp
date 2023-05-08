@@ -30,6 +30,12 @@ const Counter =()=>{
 }
 
 const styles = StyleSheet.create({
+    container:{
+
+    },
+    title:{
+        
+    }
 
 })
 export default  Counter; 
