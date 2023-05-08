@@ -4,8 +4,8 @@ const Counter =()=>{
     let count = 0
     return(
         <View style={styles.container}>
-            
-            <Text>
+
+            <Text style={styles.title}>
                 {`Count: ${count}`}
             </Text>
 
