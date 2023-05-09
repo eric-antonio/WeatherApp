@@ -20,10 +20,7 @@ const Counter =()=>{
             <Button 
                 title={'Decrease the count '}
                 color={'green'}
-                onPress={()=>{
-                    count--
-                    console.log(count)
-                }}
+                onPress={()=>count--}
             />
         </View>
     )
