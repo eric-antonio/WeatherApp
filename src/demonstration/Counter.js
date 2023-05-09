@@ -12,15 +12,12 @@ const Counter =()=>{
             <Button 
                 color={'red'}
                 title={'Increase the count'} 
-                onPress={()=>{
-                    count++
-                    console.log(count)
-                }} 
+                onPress={()=> setCount(count+1)} 
             />
             <Button 
                 title={'Decrease the count '}
                 color={'green'}
-                onPress={()=>count--}
+                onPress={()=> setCount(count-1)}
             />
         </View>
     )
