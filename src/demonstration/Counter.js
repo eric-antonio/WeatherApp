@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React , {useState, useEffect} from "react";
 import { View , Text , Button , StyleSheet } from "react-native";
 const Counter =()=>{
     const [count , setCount] =  useState(0)
