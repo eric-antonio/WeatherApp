@@ -2,10 +2,12 @@ import React , {useState, useEffect} from "react";
 import { View , Text , Button , StyleSheet } from "react-native";
 const Counter =()=>{
     const [count , setCount] =  useState(0)
+    const [newCount, setNewCount] = useState(0)
     
     useEffect(()=>{
-        console.log(`Our count value is ${count}`)
-    })
+        console.log(`Count changed`);
+   
+    }, [count])
 
     
     return(
@@ -24,6 +26,17 @@ const Counter =()=>{
                 title={'Decrease the count '}
                 color={'green'}
                 onPress={()=> setCount(count-1)}
+            />
+
+            <Button 
+                color={'red'}
+                title={'Increase the count'} 
+                onPress={()=> setNewCount(count+1)} 
+            />
+            <Button 
+                title={'Decrease the count '}
+                color={'green'}
+                onPress={()=> setNewCount(count-1)}
             />
         </View>
     )
