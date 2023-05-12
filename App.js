@@ -9,6 +9,10 @@ const App =()=>{
   return(
     <NavigationContainer>
       <Tabs/>
+     
+    </NavigationContainer>
 
+  )
+}
 
 export default App;
