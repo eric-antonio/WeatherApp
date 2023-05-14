@@ -4,6 +4,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import Tabs from "./src/components/Tabs";
 import * as Location from 'expo-location';
 
+//! api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
+
 const App =()=>{
 
   const [loading , setLoading] = useState(true)
