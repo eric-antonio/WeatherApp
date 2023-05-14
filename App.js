@@ -1,11 +1,19 @@
 import React, {useState} from "react";
-import {ActivityIndicator } from "react-native";
+import {ActivityIndicator, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import Tabs from "./src/components/Tabs";
 
 
 const App =()=>{
 
+  const [loading , setLoading] = useState(false)
+  if(loading){
+    return(
+      <View>
+        <ActivityIndicator/>
+      </View>
+    )
+  }
   return(
     <NavigationContainer>
 
