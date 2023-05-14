@@ -13,6 +13,8 @@ const App =()=>{
   const [location, setLocation] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
 
+  console.log(TEST_KEY)
+
   useEffect(() => {
     (async () => {
       
