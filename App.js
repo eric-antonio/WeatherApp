@@ -3,17 +3,39 @@ import {ActivityIndicator, View ,StyleSheet} from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import Tabs from "./src/components/Tabs";
 import * as Location from 'expo-location';
-import {WEATHER_API_KEY} from '@env'
+import {WEATHER_API_KEY} from '@env';
 
 
 
 const App =()=>{
 
-  const [loading , setLoading] = useState(true)
-  const [location, setLocation] = useState(null);
+  const [loading , setLoading] = useState(true);
+ 
   const [errorMsg, setErrorMsg] = useState(null);
-  // console.log(WEATHER_API_KEY)
+  const [weather, setWeather] = useState([]);
+  const [lat, setLat] = useState([]);
+  const [lon, setLong] = useState([]);
+  
+  // * Here I'm trying to access the weather Api
+  const fetchWeatherData = async() => {
 
+    try {
+      const res = await fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`);
+      const data = await response.json();
+      setWeather(data);
+     
+  
+    } catch (error) {
+      setErrorMsg("Ops! Sorry Try again Could not fetch Weather. ");
+    }finally{
+
+      setLoading(false);
+      
+    }
+
+  }
+
+  // ? Here we aks permission to accesses the current location!
   useEffect(() => {
     (async () => {
       
@@ -24,15 +46,18 @@ const App =()=>{
       }
 
       let location = await Location.getCurrentPositionAsync({});
-      setLocation(location);
+      setLat(location.coords.latitude);
+      setLong(location.coords.longitude);
+      await fetchWeatherData();
     })();
-  }, []);
+  }, [lat,lon]);
 
   let text = 'Waiting..';
   if (errorMsg) {
     text = errorMsg;
-  } else if (location) {
-    text = JSON.stringify(location);
+  } else if (weather) {
+    text = JSON.stringify(weather);
+    console.log(weather)
   }
 
   //* Activity Indicator Loading
