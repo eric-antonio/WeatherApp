@@ -32,12 +32,6 @@ const App =()=>{
     console.log(weather)
   }
   
-    return(
-      <View style={styles.container}>
-        <ActivityIndicator size={'large'} color={'blue'}/>
-      </View>
-    )
-  
  
 }
 
