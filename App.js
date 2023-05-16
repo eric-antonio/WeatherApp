@@ -13,6 +13,17 @@ const App =()=>{
   const [loading, errorMsg, weather] =  useGetWeather();
   console.log(loading,errorMsg,weather);
 
+  if(weather && weather.list){
+    return(
+      <NavigationContainer>
+  
+        <Tabs weather={weather}/>
+       
+      </NavigationContainer>
+  
+    )
+  }
+
   let text = 'Waiting..';
   if (errorMsg) {
     text = errorMsg;
@@ -27,14 +38,7 @@ const App =()=>{
       </View>
     )
   }
-  return(
-    <NavigationContainer>
-
-      <Tabs weather={weather}/>
-     
-    </NavigationContainer>
-
-  )
+ 
 }
 
 const styles = StyleSheet.create({
