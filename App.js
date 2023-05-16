@@ -19,8 +19,6 @@ const App =()=>{
     text = JSON.stringify(weather);
     console.log(weather)
   }
-
-  //* Activity Indicator Loading
   if(loading){
     return(
       <View style={styles.container}>
@@ -28,8 +26,6 @@ const App =()=>{
       </View>
     )
   }
-
-  // ? App returnig the Tabs Navigation!
   return(
     <NavigationContainer>
 
