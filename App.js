@@ -10,7 +10,8 @@ import {useGetWeather} from './src/hooks/useGetWeather';;
 const App =()=>{
 
 
-  
+  const [loading, errorMsg, weather] =  useGetWeather();
+  console.log(loading,errorMsg,weather);
 
   let text = 'Waiting..';
   if (errorMsg) {
