@@ -4,17 +4,12 @@ import { NavigationContainer } from "@react-navigation/native";
 import Tabs from "./src/components/Tabs";
 import * as Location from 'expo-location';
 import {WEATHER_API_KEY} from '@env';
-
+import {useGetWeather} from './src/hooks/useGetWeather';;
 
 
 const App =()=>{
 
-  const [loading , setLoading] = useState(true);
- 
-  const [errorMsg, setErrorMsg] = useState(null);
-  const [weather, setWeather] = useState([]);
-  const [lat, setLat] = useState([]);
-  const [lon, setLong] = useState([]);
+
   
 
   let text = 'Waiting..';
