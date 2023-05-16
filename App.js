@@ -31,13 +31,13 @@ const App =()=>{
     text = JSON.stringify(weather);
     console.log(weather)
   }
-  if(loading){
+  
     return(
       <View style={styles.container}>
         <ActivityIndicator size={'large'} color={'blue'}/>
       </View>
     )
-  }
+  
  
 }
 
