@@ -24,20 +24,20 @@ const App =()=>{
     )
   }
 
-  // let text = 'Waiting..';
-  // if (errorMsg) {
-  //   text = errorMsg;
-  // } else if (weather) {
-  //   text = JSON.stringify(weather);
-  //   console.log(weather)
-  // }
-  // if(loading){
+  let text = 'Waiting..';
+  if (errorMsg) {
+    text = errorMsg;
+  } else if (weather) {
+    text = JSON.stringify(weather);
+    console.log(weather)
+  }
+  if(loading){
     return(
       <View style={styles.container}>
         <ActivityIndicator size={'large'} color={'blue'}/>
       </View>
     )
-  // }
+  }
  
 }
 

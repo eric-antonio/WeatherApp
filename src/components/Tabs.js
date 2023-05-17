@@ -7,9 +7,9 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Feather } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
-
+const Tab = createBottomTabNavigator();
 const Tabs =()=>{
-    const Tab = createBottomTabNavigator();
+    
     const Tabs = ({weather}) =>{
         return(
             <Tab.Navigator 
