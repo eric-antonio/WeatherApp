@@ -10,7 +10,6 @@ import {WEATHER_API_KEY} from '@env';
 const App =()=>{
 
   const [loading , setLoading] = useState(true);
- 
   const [errorMsg, setErrorMsg] = useState(null);
   const [weather, setWeather] = useState([]);
   const [lat, setLat] = useState([]);
