@@ -10,12 +10,11 @@ export const useGetWeather = ()=>{
     const [lat, setLat] = useState([]);
     const [lon, setLong] = useState([]);
 
-    // * Here I'm trying to access the weather Api
   const fetchWeatherData = async() => {
 
     try {
       const res = await fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`);
-      const data = await response.json();
+      const data = await res.json();
       setWeather(data);
      
   
@@ -29,7 +28,6 @@ export const useGetWeather = ()=>{
 
   }
 
-  // ? Here we aks permission to accesses the current location!
   useEffect(() => {
     (async () => {
       
