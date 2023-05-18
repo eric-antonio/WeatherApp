@@ -6,8 +6,6 @@ import * as Location from 'expo-location';
 import {WEATHER_API_KEY} from '@env';
 import { useGetWeather } from "./src/hooks/useGetWeather";
 
-
-
 const App =()=>{
 
 <<<<<<< Updated upstream
