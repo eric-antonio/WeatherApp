@@ -21,7 +21,7 @@ const App =()=>{
 
     try {
       const res = await fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`);
-      const data = await response.json();
+      const data = await res.json();
       setWeather(data);
      
   
@@ -52,11 +52,7 @@ const App =()=>{
     })();
   }, [lat,lon]);
 
-  let text = 'Waiting..';
-  if (errorMsg) {
-    text = errorMsg;
-  } else if (weather) {
-    text = JSON.stringify(weather);
+  if (weather) {
     console.log(weather)
   }
 
