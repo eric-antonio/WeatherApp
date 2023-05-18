@@ -4,11 +4,17 @@ import { NavigationContainer } from "@react-navigation/native";
 import Tabs from "./src/components/Tabs";
 import * as Location from 'expo-location';
 import {WEATHER_API_KEY} from '@env';
+import { useGetWeather } from "./src/hooks/useGetWeather";
 
 
 
 const App =()=>{
 
+<<<<<<< Updated upstream
+  const[loading, errorMsg, weather] =  useGetWeather();
+  console.log(loading,errorMsg,weather);
+
+=======
   const [loading , setLoading] = useState(true);
   const [errorMsg, setErrorMsg] = useState(null);
   const [weather, setWeather] = useState([]);
@@ -20,11 +26,11 @@ const App =()=>{
 
     try {
       const res = await fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`);
-      const data = await res.json();
+      const data = await response.json();
       setWeather(data);
      
   
-    } catch (error) {
+    } catch (errorMsg) {
       setErrorMsg("Ops! Sorry Try again Could not fetch Weather. ");
     }finally{
 
@@ -56,6 +62,7 @@ const App =()=>{
   }
 
   //* Activity Indicator Loading
+>>>>>>> Stashed changes
   if(loading){
     return(
       <View style={styles.container}>
@@ -64,7 +71,6 @@ const App =()=>{
     )
   }
 
-  // ? App returnig the Tabs Navigation!
   return(
     <NavigationContainer>
 
