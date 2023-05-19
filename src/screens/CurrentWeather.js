@@ -38,7 +38,7 @@ const  CurrentWeather = (weatherData)=> {
         <Feather 
           name={weatherType[weatherCondition].icon} 
           size={74} 
-          color="black"
+          color="white"
         />
 
         <Text style={tempStyles}>6</Text>
