@@ -7,15 +7,22 @@ const  CurrentWeather = (weatherData)=> {
 
   const {
     container,
-    temp,
+    tempStyles,
     feels,
     higLowWrapper,
     higLow,
     bodyWrapper,
     description,
     message
-  } = styles
-  console.log(weatherData)
+  } = styles;
+
+  const {
+    main:{temp, feels_like,temp_max,temp_min}, 
+    weather
+  } = weatherData;
+  
+  const weatherCondition = weather[0].main;
+
   return (
     <SafeAreaView style={styles.wrapper}>
 
@@ -23,7 +30,7 @@ const  CurrentWeather = (weatherData)=> {
       <View style={container}>
         {/* Applying a icon   */}
        <Feather name="sun" size={74} color="black" />
-       <Text style={temp}>6</Text>
+       <Text style={tempStyles}>6</Text>
        <Text style={feels}>Feels like 5</Text>
 
         {/* RowText Component */}
@@ -62,7 +69,7 @@ const styles = StyleSheet.create({
     marginTop: StatusBar.currentHeight || 0,
     
   },
-  temp:{
+  tempStyles:{
     color:'black',
     fontSize:48,
   },
