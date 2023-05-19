@@ -33,10 +33,17 @@ const  CurrentWeather = (weatherData)=> {
 
       {/* The main View of the Application */}
       <View style={container}>
+
         {/* Applying a icon   */}
-       <Feather name="sun" size={74} color="black" />
-       <Text style={tempStyles}>6</Text>
-       <Text style={feels}>Feels like 5</Text>
+        <Feather 
+          name={weatherType[weatherCondition].icon} 
+          size={74} 
+          color="black"
+        />
+
+        <Text style={tempStyles}>6</Text>
+
+        <Text style={feels}>Feels like 5</Text>
 
         {/* RowText Component */}
         <RowText 
