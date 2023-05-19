@@ -20,11 +20,16 @@ const  CurrentWeather = (weatherData)=> {
     main:{temp, feels_like,temp_max,temp_min}, 
     weather
   } = weatherData;
-  
+
   const weatherCondition = weather[0].main;
 
   return (
-    <SafeAreaView style={styles.wrapper}>
+    <SafeAreaView 
+      style={[
+        styles.wrapper, 
+        {backgroundColor:weatherType[weatherCondition].backgroundColor}
+      ]}
+    >
 
       {/* The main View of the Application */}
       <View style={container}>
