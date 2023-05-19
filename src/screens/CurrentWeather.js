@@ -17,7 +17,7 @@ const  CurrentWeather = (weatherData)=> {
   } = styles;
 
   const {
-    main:{temp, feels_like,temp_max,temp_min}, 
+    main: { temp ,feels_like,temp_max,temp_min}, 
     weather
   } = weatherData;
 
@@ -41,14 +41,14 @@ const  CurrentWeather = (weatherData)=> {
           color="white"
         />
 
-        <Text style={tempStyles}>6</Text>
+        <Text style={tempStyles}> {temp} </Text>
 
-        <Text style={feels}>Feels like 5</Text>
+        <Text style={feels}> {`Feels like ${feels_like}`} </Text>
 
         {/* RowText Component */}
         <RowText 
-          messageOne ={'High: 8 '} 
-          messageTwo = {'Low: 6'} 
+          messageOne ={`High:${temp_max} `} 
+          messageTwo = {`Low:${temp_min} `} 
           containerStyles ={higLowWrapper} 
           messageOneStyles = {higLow}
           messageTwoStyles = {higLow}
@@ -57,8 +57,8 @@ const  CurrentWeather = (weatherData)=> {
 
       {/* New View The Body Wrapper */}
       <RowText 
-        messageOne = {"It's Sunny"}
-        messageTwo = {weatherType['Thunderstorm'].message}
+        messageOne = {weather[0].description}
+        messageTwo = {weatherType[weatherCondition].message}
         containerStyles = {bodyWrapper} 
         messageOneStyles ={description} 
         messageTwoStyles = {message}

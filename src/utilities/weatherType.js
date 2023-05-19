@@ -38,5 +38,6 @@ export const weatherType ={
         icon:'align-justify',
         message:'It might be hard to see!',
         background:'#3e3e37',
+        temp:''
     },
 }
