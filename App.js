@@ -12,22 +12,24 @@ const App =()=>{
   const [loading, errorMsg, weather] =  useGetWeather();
   console.log(loading,errorMsg,weather);
 
-  if(loading){
+  if(weather && weather.list){
     return(
-      <View style={styles.container}>
-        <ActivityIndicator size={'large'} color={'blue'}/>
-      </View>
+      <NavigationContainer>
+  
+        <Tabs weather={weather}/>
+       
+      </NavigationContainer>
+  
     )
   }
 
   return(
-    <NavigationContainer>
-
-      <Tabs weather={weather}/>
-     
-    </NavigationContainer>
-
+    <View style={styles.container}>
+      <ActivityIndicator size={'large'} color={'blue'}/>
+    </View>
   )
+
+
 }
 
 const styles = StyleSheet.create({
