@@ -23,7 +23,7 @@ const App =()=>{
   return(
     <NavigationContainer>
 
-      <Tabs/>
+      <Tabs weather={weather}/>
      
     </NavigationContainer>
 
