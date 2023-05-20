@@ -7,13 +7,14 @@ const  CurrentWeather = (weatherData)=> {
 
   const {
     container,
-    tempStyles,
+    temp,
     feels,
     higLowWrapper,
     higLow,
     bodyWrapper,
     description,
     message
+<<<<<<< HEAD
   } = styles;
 
   const {
@@ -23,6 +24,10 @@ const  CurrentWeather = (weatherData)=> {
 
   const weatherCondition = weather[0].main;
 
+=======
+  } = styles
+  console.log(weatherData)
+>>>>>>> parent of caf35a2 (Update CurrentWeather.js)
   return (
     <SafeAreaView 
       style={[
@@ -35,6 +40,7 @@ const  CurrentWeather = (weatherData)=> {
       <View style={container}>
 
         {/* Applying a icon   */}
+<<<<<<< HEAD
         <Feather 
           name={weatherType[weatherCondition].icon} 
           size={74} 
@@ -44,6 +50,11 @@ const  CurrentWeather = (weatherData)=> {
         <Text style={tempStyles}> {temp} </Text>
 
         <Text style={feels}> {`Feels like ${feels_like}`} </Text>
+=======
+       <Feather name="sun" size={74} color="black" />
+       <Text style={temp}>6</Text>
+       <Text style={feels}>Feels like 5</Text>
+>>>>>>> parent of caf35a2 (Update CurrentWeather.js)
 
         {/* RowText Component */}
         <RowText 
@@ -81,7 +92,7 @@ const styles = StyleSheet.create({
     marginTop: StatusBar.currentHeight || 0,
     
   },
-  tempStyles:{
+  temp:{
     color:'black',
     fontSize:48,
   },
