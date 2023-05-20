@@ -7,7 +7,7 @@ const  CurrentWeather = (weatherData)=> {
 
   const {
     container,
-    temp,
+    tempStyles,
     feels,
     higLowWrapper,
     higLow,
@@ -17,9 +17,9 @@ const  CurrentWeather = (weatherData)=> {
   } = styles;
 
   const {
-    main: { temp ,feels_like,temp_max,temp_min}, 
+    main:{temp, feels_like, temp_max, temp_min}, 
     weather
-  } = weatherData;
+  }= weatherData;
 
   const weatherCondition = weather[0].main;
 
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
 
   wrapper:{
     flex: 1,
-    backgroundColor:'dodgerblue',
+    backgroundColor:'#f0f8ff',
   },
   container :{
  
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     marginTop: StatusBar.currentHeight || 0,
     
   },
-  temp:{
+  tempStyles:{
     color:'black',
     fontSize:48,
   },

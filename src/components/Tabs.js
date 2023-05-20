@@ -16,10 +16,10 @@ const Tabs = ( {weather} ) => {
                 tabBarActiveTintColor:'#ffff',
                 tabBarInactiveTintColor:'grey',
                 tabBarStyle:{
-                    backgroundColor: 'dodgerblue'
+                    backgroundColor: '#f0f8ff'
                 },
                 headerStyle:{
-                    backgroundColor: 'dodgerblue'
+                    backgroundColor: '#f0f8ff'
                 },
                 headerTitleStyle:{
                     color:'#ffff',
