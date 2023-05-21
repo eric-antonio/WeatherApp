@@ -16,7 +16,10 @@ const  CurrentWeather = (weatherData)=> {
     message
   } = styles;
 
-
+  const {
+    main:{temp, feels_like, temp_max, temp_min}, 
+    weather
+  }= weatherData;
 
   const weatherCondition = weather[0].main;
 
