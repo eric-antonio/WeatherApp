@@ -5,16 +5,6 @@ import RowText from '../components/RowText';
 import { weatherType } from '../utilities/weatherType';
 const  CurrentWeather = (weatherData)=> {
 
-  const {
-    container,
-    tempStyles,
-    feels,
-    higLowWrapper,
-    higLow,
-    bodyWrapper,
-    description,
-    message
-  } = styles;
 
   const {
     main:{temp, feels_like, temp_max, temp_min}, 
