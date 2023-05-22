@@ -9,7 +9,25 @@ import { AntDesign } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
 
-
+const Tabs = ( {weather} ) => {
+    return(
+        <Tab.Navigator 
+            screenOptions={{
+                tabBarActiveTintColor:'#ffff',
+                tabBarInactiveTintColor:'grey',
+                tabBarStyle:{
+                    backgroundColor: '#f0f8ff'
+                },
+                headerStyle:{
+                    backgroundColor: '#f0f8ff'
+                },
+                headerTitleStyle:{
+                    color:'#ffff',
+                    fontWeight:'bold',
+                    fontSize:25,
+                   
+                }
+            
             }}
         >
 
