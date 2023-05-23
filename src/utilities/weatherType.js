@@ -4,7 +4,12 @@ export const weatherType ={
         message:'It could get noisy!',
         background:'#000000',
     },
-   
+    Drizzle:{
+        icon:'cloud-rain',
+        message:'It might rain a little!',
+        background:'#3645f',
+    },
+    Rain:{
         icon:'umbrella',
         message:'You will need an Umbrella!',
         background:'#0000ff',
