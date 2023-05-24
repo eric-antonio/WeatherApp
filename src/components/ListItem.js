@@ -8,6 +8,20 @@ import {Feather}  from '@expo/vector-icons';
 ?   temos aqui apenas uma View com 3 Text para dispor a informação
 */
 
+const ListItem = (props)=>{
+    const { dt_txt, min , max ,condition } = props
+    const {date, temp, item} = styles
+    return(
+        <View style={item}>
+            
+            <Feather name={'sun'} size={50} color={'#fffafa'}/>
+            <Text style={date}>{dt_txt}</Text>
+            <Text style={temp}>{min}</Text>
+            <Text style={temp}>{max}</Text>
+
+        </View>
+    )
+}
 
 const styles =  StyleSheet.create({
     item:{
