@@ -25,20 +25,7 @@ const  CurrentWeather = (weatherData)=> {
 
   return (
     <SafeAreaView 
-      style={[
-        styles.wrapper, 
-        {backgroundColor:weatherType[weatherCondition].backgroundColor}
-      ]}
-    >
 
-      {/* The main View of the Application */}
-      <View style={container}>
-
-        {/* Applying a icon   */}
-        <Feather 
-          name={weatherType[weatherCondition].icon} 
-          size={74} 
-          color="white"
         />
 
         <Text style={tempStyles}> {temp} </Text>
